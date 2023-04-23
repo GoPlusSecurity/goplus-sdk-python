@@ -51,6 +51,7 @@ class GetAccessTokenResponse(object):
     def access_token(self):
         """Gets the access_token of this GetAccessTokenResponse.  # noqa: E501
 
+        access_token  # noqa: E501
 
         :return: The access_token of this GetAccessTokenResponse.  # noqa: E501
         :rtype: str
@@ -61,6 +62,7 @@ class GetAccessTokenResponse(object):
     def access_token(self, access_token):
         """Sets the access_token of this GetAccessTokenResponse.
 
+        access_token  # noqa: E501
 
         :param access_token: The access_token of this GetAccessTokenResponse.  # noqa: E501
         :type: str
@@ -72,6 +74,7 @@ class GetAccessTokenResponse(object):
     def expires_in(self):
         """Gets the expires_in of this GetAccessTokenResponse.  # noqa: E501
 
+        expires_in  # noqa: E501
 
         :return: The expires_in of this GetAccessTokenResponse.  # noqa: E501
         :rtype: int
@@ -82,6 +85,7 @@ class GetAccessTokenResponse(object):
     def expires_in(self, expires_in):
         """Sets the expires_in of this GetAccessTokenResponse.
 
+        expires_in  # noqa: E501
 
         :param expires_in: The expires_in of this GetAccessTokenResponse.  # noqa: E501
         :type: int
