@@ -42,7 +42,7 @@ class ContractAbiControllerApi(object):
 
         :param async_req bool
         :param ParseAbiDataRequest body: abiDataRequest (required)
-        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW1zQ9cCv8WrbB1)
+        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
         :return: ResponseWrapperParseAbiDataResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -64,7 +64,7 @@ class ContractAbiControllerApi(object):
 
         :param async_req bool
         :param ParseAbiDataRequest body: abiDataRequest (required)
-        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW1zQ9cCv8WrbB1)
+        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
         :return: ResponseWrapperParseAbiDataResponse
                  If the method is called asynchronously,
                  returns the request thread.

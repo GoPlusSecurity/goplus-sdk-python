@@ -42,7 +42,7 @@ class WebsiteControllerApi(object):
 
         :param async_req bool
         :param str url: Url (required)
-        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW1zQ9cCv8WrbB1)
+        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
         :return: ResponseWrapperMapstringstringA9a4024aE50a4a3aA475Dba457d7c10e
                  If the method is called asynchronously,
                  returns the request thread.
@@ -64,7 +64,7 @@ class WebsiteControllerApi(object):
 
         :param async_req bool
         :param str url: Url (required)
-        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW1zQ9cCv8WrbB1)
+        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
         :return: ResponseWrapperMapstringstringA9a4024aE50a4a3aA475Dba457d7c10e
                  If the method is called asynchronously,
                  returns the request thread.
