@@ -42,7 +42,7 @@ class ApproveControllerV1Api(object):
 
         :param async_req bool
         :param str address: address (required)
-        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW1zQ9cCv8WrbB1)
+        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
         :param str chain_id: The chain_id of the blockchain. \"1\" means Ethereum;  \"10\" means Optimism; “25” means Cronos; \"56\" means BSC;  “66” means OKC; \"100\" means Gnosis; \"128\" means HECO;  \"137\" means Polygon;  \"250\" means Fantom; \"321\" means KCC; \"324\" means zkSync Era; \"10001\" means ETHW; \"201022\" means FON; \"42161\" means Arbitrum;  \"43114\" means Avalanche; \"59140\" means Linea; \"1666600000\" means Harmony; \"tron\" means Tron.
         :return: ResponseWrapperobjectF7b82021Fc934bb69009542c33e30a39
                  If the method is called asynchronously,
@@ -65,7 +65,7 @@ class ApproveControllerV1Api(object):
 
         :param async_req bool
         :param str address: address (required)
-        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW1zQ9cCv8WrbB1)
+        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
         :param str chain_id: The chain_id of the blockchain. \"1\" means Ethereum;  \"10\" means Optimism; “25” means Cronos; \"56\" means BSC;  “66” means OKC; \"100\" means Gnosis; \"128\" means HECO;  \"137\" means Polygon;  \"250\" means Fantom; \"321\" means KCC; \"324\" means zkSync Era; \"10001\" means ETHW; \"201022\" means FON; \"42161\" means Arbitrum;  \"43114\" means Avalanche; \"59140\" means Linea; \"1666600000\" means Harmony; \"tron\" means Tron.
         :return: ResponseWrapperobjectF7b82021Fc934bb69009542c33e30a39
                  If the method is called asynchronously,
@@ -134,7 +134,7 @@ class ApproveControllerV1Api(object):
             collection_formats=collection_formats)
 
     def approval_contract_using_get(self, chain_id, **kwargs):  # noqa: E501
-        """Obtain License Contract Information  # noqa: E501
+        """Check if the approval is secure   # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -143,7 +143,7 @@ class ApproveControllerV1Api(object):
 
         :param async_req bool
         :param str chain_id: Chain id, (ETH: 1,  BSC: 56, OKC: 66, Heco: 128, Polygon: 137, Fantom:250, Arbitrum: 42161, Avalanche: 43114) (required)
-        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW1zQ9cCv8WrbB1)
+        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
         :param str contract_addresses: Contract needs to be detected
         :return: ResponseWrapperContractApproveResponse
                  If the method is called asynchronously,
@@ -157,7 +157,7 @@ class ApproveControllerV1Api(object):
             return data
 
     def approval_contract_using_get_with_http_info(self, chain_id, **kwargs):  # noqa: E501
-        """Obtain License Contract Information  # noqa: E501
+        """Check if the approval is secure   # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -166,7 +166,7 @@ class ApproveControllerV1Api(object):
 
         :param async_req bool
         :param str chain_id: Chain id, (ETH: 1,  BSC: 56, OKC: 66, Heco: 128, Polygon: 137, Fantom:250, Arbitrum: 42161, Avalanche: 43114) (required)
-        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW1zQ9cCv8WrbB1)
+        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
         :param str contract_addresses: Contract needs to be detected
         :return: ResponseWrapperContractApproveResponse
                  If the method is called asynchronously,

@@ -33,7 +33,7 @@ class DappControllerApi(object):
         self.api_client = api_client
 
     def get_dapp_info_using_get(self, **kwargs):  # noqa: E501
-        """DappInformationByUrl  # noqa: E501
+        """Check risk of dapp through URL  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -41,7 +41,7 @@ class DappControllerApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW1zQ9cCv8WrbB1)
+        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
         :param str url: Url or domain
         :return: ResponseWrapperDappContractSecurityResponse
                  If the method is called asynchronously,
@@ -55,7 +55,7 @@ class DappControllerApi(object):
             return data
 
     def get_dapp_info_using_get_with_http_info(self, **kwargs):  # noqa: E501
-        """DappInformationByUrl  # noqa: E501
+        """Check risk of dapp through URL  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -63,7 +63,7 @@ class DappControllerApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW1zQ9cCv8WrbB1)
+        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
         :param str url: Url or domain
         :return: ResponseWrapperDappContractSecurityResponse
                  If the method is called asynchronously,

@@ -33,7 +33,7 @@ class ApproveControllerV2Api(object):
         self.api_client = api_client
 
     def address_nft1155_approve_list_using_get1(self, addresses, chain_id, **kwargs):  # noqa: E501
-        """AuthorizationAuthorizedAddressListNFT1155  # noqa: E501
+        """Check risk of all erc1155 approvals under one EOA.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -43,7 +43,7 @@ class ApproveControllerV2Api(object):
         :param async_req bool
         :param str addresses: contract address (required)
         :param str chain_id: chain id (required)
-        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW1zQ9cCv8WrbB1)
+        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
         :return: ResponseWrapperListApproveNFT1155ListResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -56,7 +56,7 @@ class ApproveControllerV2Api(object):
             return data
 
     def address_nft1155_approve_list_using_get1_with_http_info(self, addresses, chain_id, **kwargs):  # noqa: E501
-        """AuthorizationAuthorizedAddressListNFT1155  # noqa: E501
+        """Check risk of all erc1155 approvals under one EOA.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -66,7 +66,7 @@ class ApproveControllerV2Api(object):
         :param async_req bool
         :param str addresses: contract address (required)
         :param str chain_id: chain id (required)
-        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW1zQ9cCv8WrbB1)
+        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
         :return: ResponseWrapperListApproveNFT1155ListResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -138,7 +138,7 @@ class ApproveControllerV2Api(object):
             collection_formats=collection_formats)
 
     def address_nft721_approve_list_using_get1(self, addresses, chain_id, **kwargs):  # noqa: E501
-        """AuthorizationAuthorizedAddressListNFT721  # noqa: E501
+        """Check risk of all erc721 approvals under one EOA.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -148,7 +148,7 @@ class ApproveControllerV2Api(object):
         :param async_req bool
         :param str addresses: contract address (required)
         :param str chain_id: chain id (required)
-        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW1zQ9cCv8WrbB1)
+        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
         :return: ResponseWrapperListApproveNFTListResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -161,7 +161,7 @@ class ApproveControllerV2Api(object):
             return data
 
     def address_nft721_approve_list_using_get1_with_http_info(self, addresses, chain_id, **kwargs):  # noqa: E501
-        """AuthorizationAuthorizedAddressListNFT721  # noqa: E501
+        """Check risk of all erc721 approvals under one EOA.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -171,7 +171,7 @@ class ApproveControllerV2Api(object):
         :param async_req bool
         :param str addresses: contract address (required)
         :param str chain_id: chain id (required)
-        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW1zQ9cCv8WrbB1)
+        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
         :return: ResponseWrapperListApproveNFTListResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -243,7 +243,7 @@ class ApproveControllerV2Api(object):
             collection_formats=collection_formats)
 
     def address_token_approve_list_using_get1(self, addresses, chain_id, **kwargs):  # noqa: E501
-        """AuthorizationERC20AuthorizedAddressList  # noqa: E501
+        """Check risk of all erc20 approvals under one EOA.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -253,7 +253,7 @@ class ApproveControllerV2Api(object):
         :param async_req bool
         :param str addresses: contract address (required)
         :param str chain_id: chain id (required)
-        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW1zQ9cCv8WrbB1)
+        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
         :return: ResponseWrapperListApproveTokenOutListResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -266,7 +266,7 @@ class ApproveControllerV2Api(object):
             return data
 
     def address_token_approve_list_using_get1_with_http_info(self, addresses, chain_id, **kwargs):  # noqa: E501
-        """AuthorizationERC20AuthorizedAddressList  # noqa: E501
+        """Check risk of all erc20 approvals under one EOA.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -276,7 +276,7 @@ class ApproveControllerV2Api(object):
         :param async_req bool
         :param str addresses: contract address (required)
         :param str chain_id: chain id (required)
-        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW1zQ9cCv8WrbB1)
+        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
         :return: ResponseWrapperListApproveTokenOutListResponse
                  If the method is called asynchronously,
                  returns the request thread.

@@ -43,7 +43,7 @@ class NftControllerApi(object):
         :param async_req bool
         :param str chain_id: Chain id, (eth: 1, bsc: 56, Polygon: 137, Avalanche: 43114) (required)
         :param str contract_addresses: NFT contract address (required)
-        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW1zQ9cCv8WrbB1)
+        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
         :param str token_id: tokenId
         :return: ResponseWrapperJSONObject59da6cfeB2f246e4936a6968cc97141b
                  If the method is called asynchronously,
@@ -67,7 +67,7 @@ class NftControllerApi(object):
         :param async_req bool
         :param str chain_id: Chain id, (eth: 1, bsc: 56, Polygon: 137, Avalanche: 43114) (required)
         :param str contract_addresses: NFT contract address (required)
-        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW1zQ9cCv8WrbB1)
+        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
         :param str token_id: tokenId
         :return: ResponseWrapperJSONObject59da6cfeB2f246e4936a6968cc97141b
                  If the method is called asynchronously,
