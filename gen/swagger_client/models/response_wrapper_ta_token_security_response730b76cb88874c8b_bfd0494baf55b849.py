@@ -30,7 +30,7 @@ class ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b849(obj
     swagger_types = {
         'code': 'int',
         'message': 'str',
-        'result': 'ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Result'
+        'result': 'dict(str, ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Result)'
     }
 
     attribute_map = {
@@ -102,9 +102,10 @@ class ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b849(obj
     def result(self):
         """Gets the result of this ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b849.  # noqa: E501
 
+        Response result  # noqa: E501
 
         :return: The result of this ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b849.  # noqa: E501
-        :rtype: ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Result
+        :rtype: dict(str, ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Result)
         """
         return self._result
 
@@ -112,9 +113,10 @@ class ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b849(obj
     def result(self, result):
         """Sets the result of this ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b849.
 
+        Response result  # noqa: E501
 
         :param result: The result of this ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b849.  # noqa: E501
-        :type: ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Result
+        :type: dict(str, ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bbfd0494baf55b849Result)
         """
 
         self._result = result
