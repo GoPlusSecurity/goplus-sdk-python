@@ -41,9 +41,9 @@ class TokenControllerV1Api(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
+        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
         :param str name: API name.
-        :return: ResponseWrapperListJSONObject4e98b9e2Fbdb43329976A30066e02b73
+        :return: ResponseWrapperListJSONObject9524a1c652c545bfB6c6898bfc3e93f3
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -63,9 +63,9 @@ class TokenControllerV1Api(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
+        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
         :param str name: API name.
-        :return: ResponseWrapperListJSONObject4e98b9e2Fbdb43329976A30066e02b73
+        :return: ResponseWrapperListJSONObject9524a1c652c545bfB6c6898bfc3e93f3
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -117,7 +117,7 @@ class TokenControllerV1Api(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='ResponseWrapperListJSONObject4e98b9e2Fbdb43329976A30066e02b73',  # noqa: E501
+            response_type='ResponseWrapperListJSONObject9524a1c652c545bfB6c6898bfc3e93f3',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -136,8 +136,8 @@ class TokenControllerV1Api(object):
         :param async_req bool
         :param str chain_id: The chain_id of the blockchain. \"1\" means Ethereum;  \"10\" means Optimism; “25” means Cronos; \"56\" means BSC;  “66” means OKC; \"100\" means Gnosis; \"128\" means HECO;  \"137\" means Polygon;  \"250\" means Fantom; \"321\" means KCC; \"324\" means zkSync Era; \"10001\" means ETHW; \"201022\" means FON; \"42161\" means Arbitrum;  \"43114\" means Avalanche; \"59140\" means Linea; \"1666600000\" means Harmony; \"tron\" means Tron. (required)
         :param str contract_addresses: The contract address of tokens. (required)
-        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
-        :return: ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b849
+        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
+        :return: ResponseWrapperTaTokenSecurityResponse205696bcFb354bc5Ab26Ddc7cd495fe2
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -159,8 +159,8 @@ class TokenControllerV1Api(object):
         :param async_req bool
         :param str chain_id: The chain_id of the blockchain. \"1\" means Ethereum;  \"10\" means Optimism; “25” means Cronos; \"56\" means BSC;  “66” means OKC; \"100\" means Gnosis; \"128\" means HECO;  \"137\" means Polygon;  \"250\" means Fantom; \"321\" means KCC; \"324\" means zkSync Era; \"10001\" means ETHW; \"201022\" means FON; \"42161\" means Arbitrum;  \"43114\" means Avalanche; \"59140\" means Linea; \"1666600000\" means Harmony; \"tron\" means Tron. (required)
         :param str contract_addresses: The contract address of tokens. (required)
-        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
-        :return: ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b849
+        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
+        :return: ResponseWrapperTaTokenSecurityResponse205696bcFb354bc5Ab26Ddc7cd495fe2
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -222,7 +222,7 @@ class TokenControllerV1Api(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='ResponseWrapperTaTokenSecurityResponse730b76cb88874c8bBfd0494baf55b849',  # noqa: E501
+            response_type='ResponseWrapperTaTokenSecurityResponse205696bcFb354bc5Ab26Ddc7cd495fe2',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
