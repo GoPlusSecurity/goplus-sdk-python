@@ -10,6 +10,7 @@ class Token(Base):
 
     def __init__(self, access_token=None):
         super().__init__(access_token=access_token)
+        self.api = TokenControllerV1Api()
 
     @staticmethod
     def __check(addresses):
@@ -24,6 +25,6 @@ class Token(Base):
 
         self.__check(addresses)
 
-        return TokenControllerV1Api().token_security_using_get1(chain_id=chain_id,
-                                                                contract_addresses=','.join(addresses),
-                                                                **self.authorization, **kwargs)
+        return self.api.token_security_using_get1(chain_id=chain_id,
+                                                  contract_addresses=','.join(addresses),
+                                                  **self.authorization, **kwargs)

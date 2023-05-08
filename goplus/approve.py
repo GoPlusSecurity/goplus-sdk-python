@@ -10,13 +10,15 @@ class Approve(Base):
 
     def __init__(self, access_token=None):
         super().__init__(access_token=access_token)
+        self.api = ApproveControllerV1Api()
+        self.api_v2 = ApproveControllerV2Api()
 
     def approve_security_v1(self, chain_id: str, address: str, **kwargs):
         """
         Approve Security V1
         """
         kwargs["contract_addresses"] = address
-        return ApproveControllerV1Api().approval_contract_using_get(chain_id, **self.authorization,
+        return self.api.approval_contract_using_get(chain_id, **self.authorization,
                                                                     **kwargs)
 
     def token_approve_security(self, chain_id: str, address: str, **kwargs):
@@ -24,7 +26,7 @@ class Approve(Base):
         Token Approve Security
         """
 
-        return ApproveControllerV2Api().address_token_approve_list_using_get1(chain_id=chain_id, addresses=address,
+        return self.api_v2.address_token_approve_list_using_get1(chain_id=chain_id, addresses=address,
                                                                               **self.authorization, **kwargs)
 
     def erc721_approve_security(self, chain_id: str, address: str, **kwargs):
@@ -32,7 +34,7 @@ class Approve(Base):
         ERC721 Approve Security
         """
 
-        return ApproveControllerV2Api().address_nft721_approve_list_using_get1(chain_id=chain_id, addresses=address,
+        return self.api_v2.address_nft721_approve_list_using_get1(chain_id=chain_id, addresses=address,
                                                                                **self.authorization, **kwargs)
 
     def erc1155_approve_security(self, chain_id: str, address: str, **kwargs):
@@ -40,5 +42,5 @@ class Approve(Base):
         ERC1155 Approve Security
         """
 
-        return ApproveControllerV2Api().address_nft1155_approve_list_using_get1(chain_id=chain_id, addresses=address,
+        return self.api_v2.address_nft1155_approve_list_using_get1(chain_id=chain_id, addresses=address,
                                                                                 **self.authorization, **kwargs)

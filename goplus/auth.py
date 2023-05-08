@@ -10,6 +10,7 @@ class Auth(object):
         self.__check(key, secret)
         self.key = key
         self.secret = secret
+        self.api = TokenControllerApi()
 
     @staticmethod
     def __check(key, secret):
@@ -25,7 +26,6 @@ class Auth(object):
 
     def get_access_token(self, **kwargs):
         t = int(time.time())
-        tc = TokenControllerApi()
-        tc.api_client.set_default_header("Content-Type", "multipart/form-data")
-        return tc.get_access_token_using_post(self.key, self.__sign(self.key, self.secret, t),
+        self.api.api_client.set_default_header("Content-Type", "multipart/form-data")
+        return self.api.get_access_token_using_post(self.key, self.__sign(self.key, self.secret, t),
                                               t, **kwargs)

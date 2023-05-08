@@ -7,6 +7,7 @@ class Decode(Base):
 
     def __init__(self, access_token=None):
         super().__init__(access_token=access_token)
+        self.api = ContractAbiControllerApi()
 
     def signature_data_decode(self, chain_id: str, data: str, address=None, signer=None, **kwargs):
 
@@ -21,4 +22,4 @@ class Decode(Base):
         if signer is not None:
             body["signer"] = signer
 
-        return ContractAbiControllerApi().get_abi_data_info_using_post(body=body, **self.authorization, **kwargs)
+        return self.api.get_abi_data_info_using_post(body=body, **self.authorization, **kwargs)
