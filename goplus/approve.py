@@ -17,9 +17,8 @@ class Approve(Base):
         """
         Approve Security V1
         """
-        kwargs["contract_addresses"] = address
-        return self.api.approval_contract_using_get(chain_id, **self.authorization,
-                                                                    **kwargs)
+        return self.api.approval_contract_using_get(chain_id=chain_id, contract_addresses=address, **self.authorization,
+                                                    **kwargs)
 
     def token_approve_security(self, chain_id: str, address: str, **kwargs):
         """
@@ -27,7 +26,7 @@ class Approve(Base):
         """
 
         return self.api_v2.address_token_approve_list_using_get1(chain_id=chain_id, addresses=address,
-                                                                              **self.authorization, **kwargs)
+                                                                 **self.authorization, **kwargs)
 
     def erc721_approve_security(self, chain_id: str, address: str, **kwargs):
         """
@@ -35,7 +34,7 @@ class Approve(Base):
         """
 
         return self.api_v2.address_nft721_approve_list_using_get1(chain_id=chain_id, addresses=address,
-                                                                               **self.authorization, **kwargs)
+                                                                  **self.authorization, **kwargs)
 
     def erc1155_approve_security(self, chain_id: str, address: str, **kwargs):
         """
@@ -43,4 +42,4 @@ class Approve(Base):
         """
 
         return self.api_v2.address_nft1155_approve_list_using_get1(chain_id=chain_id, addresses=address,
-                                                                                **self.authorization, **kwargs)
+                                                                   **self.authorization, **kwargs)

@@ -26,6 +26,9 @@ class Auth(object):
 
     def get_access_token(self, **kwargs):
         t = int(time.time())
-        self.api.api_client.set_default_header("Content-Type", "multipart/form-data")
-        return self.api.get_access_token_using_post(self.key, self.__sign(self.key, self.secret, t),
-                                              t, **kwargs)
+        body = {
+            "app_key": self.key,
+            "sign":  self.__sign(self.key, self.secret, t),
+            "time": t
+        }
+        return self.api.get_access_token_using_post(**{"body": body}, **kwargs)

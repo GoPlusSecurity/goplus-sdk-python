@@ -31,22 +31,25 @@ class ParseAbiDataRequest(object):
         'chain_id': 'str',
         'contract_address': 'str',
         'data': 'str',
-        'signer': 'str'
+        'signer': 'str',
+        'transcation_type': 'str'
     }
 
     attribute_map = {
         'chain_id': 'chain_id',
         'contract_address': 'contract_address',
         'data': 'data',
-        'signer': 'signer'
+        'signer': 'signer',
+        'transcation_type': 'transcation_type'
     }
 
-    def __init__(self, chain_id=None, contract_address=None, data=None, signer=None):  # noqa: E501
+    def __init__(self, chain_id=None, contract_address=None, data=None, signer=None, transcation_type=None):  # noqa: E501
         """ParseAbiDataRequest - a model defined in Swagger"""  # noqa: E501
         self._chain_id = None
         self._contract_address = None
         self._data = None
         self._signer = None
+        self._transcation_type = None
         self.discriminator = None
         self.chain_id = chain_id
         if contract_address is not None:
@@ -54,12 +57,14 @@ class ParseAbiDataRequest(object):
         self.data = data
         if signer is not None:
             self.signer = signer
+        if transcation_type is not None:
+            self.transcation_type = transcation_type
 
     @property
     def chain_id(self):
         """Gets the chain_id of this ParseAbiDataRequest.  # noqa: E501
 
-        chain_id  # noqa: E501
+        Chain id, (ETH: 1, Cronos:25, BSC: 56, Heco: 128, Polygon: 137, Fantom:250, KCC: 321, Arbitrum: 42161, Avalanche: 43114)  # noqa: E501
 
         :return: The chain_id of this ParseAbiDataRequest.  # noqa: E501
         :rtype: str
@@ -70,7 +75,7 @@ class ParseAbiDataRequest(object):
     def chain_id(self, chain_id):
         """Sets the chain_id of this ParseAbiDataRequest.
 
-        chain_id  # noqa: E501
+        Chain id, (ETH: 1, Cronos:25, BSC: 56, Heco: 128, Polygon: 137, Fantom:250, KCC: 321, Arbitrum: 42161, Avalanche: 43114)  # noqa: E501
 
         :param chain_id: The chain_id of this ParseAbiDataRequest.  # noqa: E501
         :type: str
@@ -84,7 +89,7 @@ class ParseAbiDataRequest(object):
     def contract_address(self):
         """Gets the contract_address of this ParseAbiDataRequest.  # noqa: E501
 
-        contract_address  # noqa: E501
+        Carrying the signer and contract address will help to decode more information.  # noqa: E501
 
         :return: The contract_address of this ParseAbiDataRequest.  # noqa: E501
         :rtype: str
@@ -95,7 +100,7 @@ class ParseAbiDataRequest(object):
     def contract_address(self, contract_address):
         """Sets the contract_address of this ParseAbiDataRequest.
 
-        contract_address  # noqa: E501
+        Carrying the signer and contract address will help to decode more information.  # noqa: E501
 
         :param contract_address: The contract_address of this ParseAbiDataRequest.  # noqa: E501
         :type: str
@@ -107,7 +112,7 @@ class ParseAbiDataRequest(object):
     def data(self):
         """Gets the data of this ParseAbiDataRequest.  # noqa: E501
 
-        data  # noqa: E501
+        Transaction input  # noqa: E501
 
         :return: The data of this ParseAbiDataRequest.  # noqa: E501
         :rtype: str
@@ -118,7 +123,7 @@ class ParseAbiDataRequest(object):
     def data(self, data):
         """Sets the data of this ParseAbiDataRequest.
 
-        data  # noqa: E501
+        Transaction input  # noqa: E501
 
         :param data: The data of this ParseAbiDataRequest.  # noqa: E501
         :type: str
@@ -132,7 +137,7 @@ class ParseAbiDataRequest(object):
     def signer(self):
         """Gets the signer of this ParseAbiDataRequest.  # noqa: E501
 
-        signer  # noqa: E501
+        Carrying the signer and contract address will help to decode more information.  # noqa: E501
 
         :return: The signer of this ParseAbiDataRequest.  # noqa: E501
         :rtype: str
@@ -143,13 +148,42 @@ class ParseAbiDataRequest(object):
     def signer(self, signer):
         """Sets the signer of this ParseAbiDataRequest.
 
-        signer  # noqa: E501
+        Carrying the signer and contract address will help to decode more information.  # noqa: E501
 
         :param signer: The signer of this ParseAbiDataRequest.  # noqa: E501
         :type: str
         """
 
         self._signer = signer
+
+    @property
+    def transcation_type(self):
+        """Gets the transcation_type of this ParseAbiDataRequest.  # noqa: E501
+
+        Transaction type  # noqa: E501
+
+        :return: The transcation_type of this ParseAbiDataRequest.  # noqa: E501
+        :rtype: str
+        """
+        return self._transcation_type
+
+    @transcation_type.setter
+    def transcation_type(self, transcation_type):
+        """Sets the transcation_type of this ParseAbiDataRequest.
+
+        Transaction type  # noqa: E501
+
+        :param transcation_type: The transcation_type of this ParseAbiDataRequest.  # noqa: E501
+        :type: str
+        """
+        allowed_values = ["COMMON", "ETH_SIGNTYPEDDATA_V4", "PERSONAL_SIGN", "ETH_SIGN"]  # noqa: E501
+        if transcation_type not in allowed_values:
+            raise ValueError(
+                "Invalid value for `transcation_type` ({0}), must be one of {1}"  # noqa: E501
+                .format(transcation_type, allowed_values)
+            )
+
+        self._transcation_type = transcation_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

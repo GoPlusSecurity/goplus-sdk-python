@@ -43,7 +43,7 @@ class ApproveControllerV2Api(object):
         :param async_req bool
         :param str addresses: contract address (required)
         :param str chain_id: chain id (required)
-        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
+        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
         :return: ResponseWrapperListApproveNFT1155ListResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -66,7 +66,7 @@ class ApproveControllerV2Api(object):
         :param async_req bool
         :param str addresses: contract address (required)
         :param str chain_id: chain id (required)
-        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
+        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
         :return: ResponseWrapperListApproveNFT1155ListResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -148,7 +148,7 @@ class ApproveControllerV2Api(object):
         :param async_req bool
         :param str addresses: contract address (required)
         :param str chain_id: chain id (required)
-        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
+        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
         :return: ResponseWrapperListApproveNFTListResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -171,7 +171,7 @@ class ApproveControllerV2Api(object):
         :param async_req bool
         :param str addresses: contract address (required)
         :param str chain_id: chain id (required)
-        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
+        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
         :return: ResponseWrapperListApproveNFTListResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -253,7 +253,7 @@ class ApproveControllerV2Api(object):
         :param async_req bool
         :param str addresses: contract address (required)
         :param str chain_id: chain id (required)
-        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
+        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
         :return: ResponseWrapperListApproveTokenOutListResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -276,7 +276,7 @@ class ApproveControllerV2Api(object):
         :param async_req bool
         :param str addresses: contract address (required)
         :param str chain_id: chain id (required)
-        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
+        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
         :return: ResponseWrapperListApproveTokenOutListResponse
                  If the method is called asynchronously,
                  returns the request thread.

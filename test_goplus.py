@@ -1,5 +1,6 @@
 import unittest
 
+from goplus.auth import Auth
 from goplus.address import Address
 from goplus.approve import Approve
 from goplus.token import Token
@@ -8,6 +9,11 @@ from goplus.nft import Nft
 from goplus.dapp import Dapp
 from goplus.phishing_site import PushingSite
 from errocode import Code
+
+
+class AuthTest(unittest.TestCase):
+    def test_get_access_token(self):
+        Auth(key="", secret="").get_access_token()
 
 
 class TokenTest(unittest.TestCase):

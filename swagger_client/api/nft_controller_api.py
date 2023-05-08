@@ -43,9 +43,9 @@ class NftControllerApi(object):
         :param async_req bool
         :param str chain_id: Chain id, (eth: 1, bsc: 56, Polygon: 137, Avalanche: 43114) (required)
         :param str contract_addresses: NFT contract address (required)
-        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
+        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
         :param str token_id: tokenId
-        :return: ResponseWrapperJSONObject59da6cfeB2f246e4936a6968cc97141b
+        :return: ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -67,9 +67,9 @@ class NftControllerApi(object):
         :param async_req bool
         :param str chain_id: Chain id, (eth: 1, bsc: 56, Polygon: 137, Avalanche: 43114) (required)
         :param str contract_addresses: NFT contract address (required)
-        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
+        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
         :param str token_id: tokenId
-        :return: ResponseWrapperJSONObject59da6cfeB2f246e4936a6968cc97141b
+        :return: ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -133,7 +133,7 @@ class NftControllerApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='ResponseWrapperJSONObject59da6cfeB2f246e4936a6968cc97141b',  # noqa: E501
+            response_type='ResponseWrapperJSONObject5c459c547a184b1880671fad2eb60d6c',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
