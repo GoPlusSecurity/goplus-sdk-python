@@ -32,47 +32,47 @@ class ApproveControllerV1Api(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def address_contract_using_get1(self, address, chain_id, **kwargs):  # noqa: E501
+    def address_contract_using_get1(self, address, **kwargs):  # noqa: E501
         """Check if the address is malicious  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.address_contract_using_get1(address, chain_id, async_req=True)
+        >>> thread = api.address_contract_using_get1(address, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param str address: address (required)
-        :param str chain_id: The chain_id of the blockchain. \"1\" means Ethereum;  \"10\" means Optimism; “25” means Cronos; \"56\" means BSC;  “66” means OKC; \"100\" means Gnosis; \"128\" means HECO;  \"137\" means Polygon;  \"250\" means Fantom; \"321\" means KCC; \"324\" means zkSync Era; \"10001\" means ETHW; \"201022\" means FON; \"42161\" means Arbitrum;  \"43114\" means Avalanche; \"59140\" means Linea; \"1666600000\" means Harmony; \"tron\" means Tron. (required)
         :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
+        :param str chain_id: The chain_id of the blockchain. \"1\" means Ethereum;  \"10\" means Optimism; “25” means Cronos; \"56\" means BSC;  “66” means OKC; \"100\" means Gnosis; \"128\" means HECO;  \"137\" means Polygon;  \"250\" means Fantom; \"321\" means KCC; \"324\" means zkSync Era; \"10001\" means ETHW; \"201022\" means FON; \"42161\" means Arbitrum;  \"43114\" means Avalanche; \"59140\" means Linea; \"1666600000\" means Harmony; \"tron\" means Tron.
         :return: ResponseWrapperobject545a2ceaB58741b4Aae7F3d73df91255
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.address_contract_using_get1_with_http_info(address, chain_id, **kwargs)  # noqa: E501
+            return self.address_contract_using_get1_with_http_info(address, **kwargs)  # noqa: E501
         else:
-            (data) = self.address_contract_using_get1_with_http_info(address, chain_id, **kwargs)  # noqa: E501
+            (data) = self.address_contract_using_get1_with_http_info(address, **kwargs)  # noqa: E501
             return data
 
-    def address_contract_using_get1_with_http_info(self, address, chain_id, **kwargs):  # noqa: E501
+    def address_contract_using_get1_with_http_info(self, address, **kwargs):  # noqa: E501
         """Check if the address is malicious  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.address_contract_using_get1_with_http_info(address, chain_id, async_req=True)
+        >>> thread = api.address_contract_using_get1_with_http_info(address, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param str address: address (required)
-        :param str chain_id: The chain_id of the blockchain. \"1\" means Ethereum;  \"10\" means Optimism; “25” means Cronos; \"56\" means BSC;  “66” means OKC; \"100\" means Gnosis; \"128\" means HECO;  \"137\" means Polygon;  \"250\" means Fantom; \"321\" means KCC; \"324\" means zkSync Era; \"10001\" means ETHW; \"201022\" means FON; \"42161\" means Arbitrum;  \"43114\" means Avalanche; \"59140\" means Linea; \"1666600000\" means Harmony; \"tron\" means Tron. (required)
         :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
+        :param str chain_id: The chain_id of the blockchain. \"1\" means Ethereum;  \"10\" means Optimism; “25” means Cronos; \"56\" means BSC;  “66” means OKC; \"100\" means Gnosis; \"128\" means HECO;  \"137\" means Polygon;  \"250\" means Fantom; \"321\" means KCC; \"324\" means zkSync Era; \"10001\" means ETHW; \"201022\" means FON; \"42161\" means Arbitrum;  \"43114\" means Avalanche; \"59140\" means Linea; \"1666600000\" means Harmony; \"tron\" means Tron.
         :return: ResponseWrapperobject545a2ceaB58741b4Aae7F3d73df91255
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['address', 'chain_id', 'authorization']  # noqa: E501
+        all_params = ['address', 'authorization', 'chain_id']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -91,10 +91,6 @@ class ApproveControllerV1Api(object):
         if ('address' not in params or
                 params['address'] is None):
             raise ValueError("Missing the required parameter `address` when calling `address_contract_using_get1`")  # noqa: E501
-        # verify the required parameter 'chain_id' is set
-        if ('chain_id' not in params or
-                params['chain_id'] is None):
-            raise ValueError("Missing the required parameter `chain_id` when calling `address_contract_using_get1`")  # noqa: E501
 
         collection_formats = {}
 
