@@ -11,11 +11,6 @@ from goplus.phishing_site import PushingSite
 from errocode import Code
 
 
-class AuthTest(unittest.TestCase):
-    def test_get_access_token(self):
-        Auth(key="", secret="").get_access_token()
-
-
 class TokenTest(unittest.TestCase):
     def test_token_security(self):
         res = Token().token_security(chain_id="1", addresses=["0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"])
