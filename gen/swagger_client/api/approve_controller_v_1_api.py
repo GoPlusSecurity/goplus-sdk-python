@@ -32,47 +32,47 @@ class ApproveControllerV1Api(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def address_contract_using_get1(self, address, **kwargs):  # noqa: E501
+    def address_contract_using_get1(self, address, chain_id, **kwargs):  # noqa: E501
         """Check if the address is malicious  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.address_contract_using_get1(address, async_req=True)
+        >>> thread = api.address_contract_using_get1(address, chain_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param str address: address (required)
-        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
-        :param str chain_id: The chain_id of the blockchain. \"1\" means Ethereum;  \"10\" means Optimism; “25” means Cronos; \"56\" means BSC;  “66” means OKC; \"100\" means Gnosis; \"128\" means HECO;  \"137\" means Polygon;  \"250\" means Fantom; \"321\" means KCC; \"324\" means zkSync Era; \"10001\" means ETHW; \"201022\" means FON; \"42161\" means Arbitrum;  \"43114\" means Avalanche; \"59140\" means Linea; \"1666600000\" means Harmony; \"tron\" means Tron.
-        :return: ResponseWrapperobjectF7b82021Fc934bb69009542c33e30a39
+        :param str chain_id: The chain_id of the blockchain. \"1\" means Ethereum;  \"10\" means Optimism; “25” means Cronos; \"56\" means BSC;  “66” means OKC; \"100\" means Gnosis; \"128\" means HECO;  \"137\" means Polygon;  \"250\" means Fantom; \"321\" means KCC; \"324\" means zkSync Era; \"10001\" means ETHW; \"201022\" means FON; \"42161\" means Arbitrum;  \"43114\" means Avalanche; \"59140\" means Linea; \"1666600000\" means Harmony; \"tron\" means Tron. (required)
+        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
+        :return: ResponseWrapperobject545a2ceaB58741b4Aae7F3d73df91255
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.address_contract_using_get1_with_http_info(address, **kwargs)  # noqa: E501
+            return self.address_contract_using_get1_with_http_info(address, chain_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.address_contract_using_get1_with_http_info(address, **kwargs)  # noqa: E501
+            (data) = self.address_contract_using_get1_with_http_info(address, chain_id, **kwargs)  # noqa: E501
             return data
 
-    def address_contract_using_get1_with_http_info(self, address, **kwargs):  # noqa: E501
+    def address_contract_using_get1_with_http_info(self, address, chain_id, **kwargs):  # noqa: E501
         """Check if the address is malicious  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.address_contract_using_get1_with_http_info(address, async_req=True)
+        >>> thread = api.address_contract_using_get1_with_http_info(address, chain_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param str address: address (required)
-        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
-        :param str chain_id: The chain_id of the blockchain. \"1\" means Ethereum;  \"10\" means Optimism; “25” means Cronos; \"56\" means BSC;  “66” means OKC; \"100\" means Gnosis; \"128\" means HECO;  \"137\" means Polygon;  \"250\" means Fantom; \"321\" means KCC; \"324\" means zkSync Era; \"10001\" means ETHW; \"201022\" means FON; \"42161\" means Arbitrum;  \"43114\" means Avalanche; \"59140\" means Linea; \"1666600000\" means Harmony; \"tron\" means Tron.
-        :return: ResponseWrapperobjectF7b82021Fc934bb69009542c33e30a39
+        :param str chain_id: The chain_id of the blockchain. \"1\" means Ethereum;  \"10\" means Optimism; “25” means Cronos; \"56\" means BSC;  “66” means OKC; \"100\" means Gnosis; \"128\" means HECO;  \"137\" means Polygon;  \"250\" means Fantom; \"321\" means KCC; \"324\" means zkSync Era; \"10001\" means ETHW; \"201022\" means FON; \"42161\" means Arbitrum;  \"43114\" means Avalanche; \"59140\" means Linea; \"1666600000\" means Harmony; \"tron\" means Tron. (required)
+        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
+        :return: ResponseWrapperobject545a2ceaB58741b4Aae7F3d73df91255
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['address', 'authorization', 'chain_id']  # noqa: E501
+        all_params = ['address', 'chain_id', 'authorization']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -91,6 +91,10 @@ class ApproveControllerV1Api(object):
         if ('address' not in params or
                 params['address'] is None):
             raise ValueError("Missing the required parameter `address` when calling `address_contract_using_get1`")  # noqa: E501
+        # verify the required parameter 'chain_id' is set
+        if ('chain_id' not in params or
+                params['chain_id'] is None):
+            raise ValueError("Missing the required parameter `chain_id` when calling `address_contract_using_get1`")  # noqa: E501
 
         collection_formats = {}
 
@@ -125,7 +129,7 @@ class ApproveControllerV1Api(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='ResponseWrapperobjectF7b82021Fc934bb69009542c33e30a39',  # noqa: E501
+            response_type='ResponseWrapperobject545a2ceaB58741b4Aae7F3d73df91255',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -133,47 +137,47 @@ class ApproveControllerV1Api(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def approval_contract_using_get(self, chain_id, **kwargs):  # noqa: E501
+    def approval_contract_using_get(self, chain_id, contract_addresses, **kwargs):  # noqa: E501
         """Check if the approval is secure   # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.approval_contract_using_get(chain_id, async_req=True)
+        >>> thread = api.approval_contract_using_get(chain_id, contract_addresses, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param str chain_id: Chain id, (ETH: 1,  BSC: 56, OKC: 66, Heco: 128, Polygon: 137, Fantom:250, Arbitrum: 42161, Avalanche: 43114) (required)
-        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
-        :param str contract_addresses: Contract needs to be detected
+        :param str contract_addresses: Contract needs to be detected (required)
+        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
         :return: ResponseWrapperContractApproveResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.approval_contract_using_get_with_http_info(chain_id, **kwargs)  # noqa: E501
+            return self.approval_contract_using_get_with_http_info(chain_id, contract_addresses, **kwargs)  # noqa: E501
         else:
-            (data) = self.approval_contract_using_get_with_http_info(chain_id, **kwargs)  # noqa: E501
+            (data) = self.approval_contract_using_get_with_http_info(chain_id, contract_addresses, **kwargs)  # noqa: E501
             return data
 
-    def approval_contract_using_get_with_http_info(self, chain_id, **kwargs):  # noqa: E501
+    def approval_contract_using_get_with_http_info(self, chain_id, contract_addresses, **kwargs):  # noqa: E501
         """Check if the approval is secure   # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.approval_contract_using_get_with_http_info(chain_id, async_req=True)
+        >>> thread = api.approval_contract_using_get_with_http_info(chain_id, contract_addresses, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param str chain_id: Chain id, (ETH: 1,  BSC: 56, OKC: 66, Heco: 128, Polygon: 137, Fantom:250, Arbitrum: 42161, Avalanche: 43114) (required)
-        :param str authorization: Authorization example：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...
-        :param str contract_addresses: Contract needs to be detected
+        :param str contract_addresses: Contract needs to be detected (required)
+        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
         :return: ResponseWrapperContractApproveResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['chain_id', 'authorization', 'contract_addresses']  # noqa: E501
+        all_params = ['chain_id', 'contract_addresses', 'authorization']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -192,6 +196,10 @@ class ApproveControllerV1Api(object):
         if ('chain_id' not in params or
                 params['chain_id'] is None):
             raise ValueError("Missing the required parameter `chain_id` when calling `approval_contract_using_get`")  # noqa: E501
+        # verify the required parameter 'contract_addresses' is set
+        if ('contract_addresses' not in params or
+                params['contract_addresses'] is None):
+            raise ValueError("Missing the required parameter `contract_addresses` when calling `approval_contract_using_get`")  # noqa: E501
 
         collection_formats = {}
 

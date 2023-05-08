@@ -32,47 +32,43 @@ class TokenControllerApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def get_access_token_using_post(self, app_key, sign, time, **kwargs):  # noqa: E501
+    def get_access_token_using_post(self, **kwargs):  # noqa: E501
         """get token  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_access_token_using_post(app_key, sign, time, async_req=True)
+        >>> thread = api.get_access_token_using_post(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str app_key: app_key (required)
-        :param str sign: Concatenate app_key, time, app_secret in turn, and do sha1().app_key = mBOMg20QW11BbtyH4Zh0 \\n\" +             \"time = 1647847498 \\n\" +             \"app_secret = V6aRfxlPJwN3ViJSIFSCdxPvneajuJsh \\n\" +             \"sign = sha1(mBOMg20QW11BbtyH4Zh01647847498V6aRfxlPJwN3ViJSIFSCdxPvneajuJsh)\\n\" +             \"        = 7293d385b9225b3c3f232b76ba97255d0e21063e (required)
-        :param int time: Quest timestamp (Second) (required)
+        :param GetAccessTokenRequest body: request
         :return: ResponseWrapperGetAccessTokenResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.get_access_token_using_post_with_http_info(app_key, sign, time, **kwargs)  # noqa: E501
+            return self.get_access_token_using_post_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.get_access_token_using_post_with_http_info(app_key, sign, time, **kwargs)  # noqa: E501
+            (data) = self.get_access_token_using_post_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def get_access_token_using_post_with_http_info(self, app_key, sign, time, **kwargs):  # noqa: E501
+    def get_access_token_using_post_with_http_info(self, **kwargs):  # noqa: E501
         """get token  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_access_token_using_post_with_http_info(app_key, sign, time, async_req=True)
+        >>> thread = api.get_access_token_using_post_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str app_key: app_key (required)
-        :param str sign: Concatenate app_key, time, app_secret in turn, and do sha1().app_key = mBOMg20QW11BbtyH4Zh0 \\n\" +             \"time = 1647847498 \\n\" +             \"app_secret = V6aRfxlPJwN3ViJSIFSCdxPvneajuJsh \\n\" +             \"sign = sha1(mBOMg20QW11BbtyH4Zh01647847498V6aRfxlPJwN3ViJSIFSCdxPvneajuJsh)\\n\" +             \"        = 7293d385b9225b3c3f232b76ba97255d0e21063e (required)
-        :param int time: Quest timestamp (Second) (required)
+        :param GetAccessTokenRequest body: request
         :return: ResponseWrapperGetAccessTokenResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['app_key', 'sign', 'time']  # noqa: E501
+        all_params = ['body']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -87,30 +83,12 @@ class TokenControllerApi(object):
                 )
             params[key] = val
         del params['kwargs']
-        # verify the required parameter 'app_key' is set
-        if ('app_key' not in params or
-                params['app_key'] is None):
-            raise ValueError("Missing the required parameter `app_key` when calling `get_access_token_using_post`")  # noqa: E501
-        # verify the required parameter 'sign' is set
-        if ('sign' not in params or
-                params['sign'] is None):
-            raise ValueError("Missing the required parameter `sign` when calling `get_access_token_using_post`")  # noqa: E501
-        # verify the required parameter 'time' is set
-        if ('time' not in params or
-                params['time'] is None):
-            raise ValueError("Missing the required parameter `time` when calling `get_access_token_using_post`")  # noqa: E501
 
         collection_formats = {}
 
         path_params = {}
 
         query_params = []
-        if 'app_key' in params:
-            query_params.append(('appKey', params['app_key']))  # noqa: E501
-        if 'sign' in params:
-            query_params.append(('sign', params['sign']))  # noqa: E501
-        if 'time' in params:
-            query_params.append(('time', params['time']))  # noqa: E501
 
         header_params = {}
 
@@ -118,9 +96,15 @@ class TokenControllerApi(object):
         local_var_files = {}
 
         body_params = None
+        if 'body' in params:
+            body_params = params['body']
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.select_header_accept(
             ['*/*'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
 
         # Authentication setting
         auth_settings = []  # noqa: E501
