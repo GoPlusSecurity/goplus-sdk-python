@@ -1,0 +1,29 @@
+from swagger_client.api.token_controller_v_1_api import TokenControllerV1Api
+
+from goplus.base import Base
+
+
+class Token(Base):
+    """
+    Token Security
+    """
+
+    def __init__(self, access_token=None):
+        super().__init__(access_token=access_token)
+
+    @staticmethod
+    def __check(addresses):
+
+        if not isinstance(addresses, list):
+            raise TypeError("contract_addresses must be of list type!")
+
+        if len(addresses) == 0:
+            raise ValueError('invalid contract_addresses')
+
+    def token_security(self, chain_id: str, addresses: list, **kwargs):
+
+        self.__check(addresses)
+
+        return TokenControllerV1Api().token_security_using_get1(chain_id=chain_id,
+                                                                contract_addresses=','.join(addresses),
+                                                                **self.authorization, **kwargs)
