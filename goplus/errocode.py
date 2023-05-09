@@ -1,5 +1,3 @@
-
-
 class Code:
     SUCCESS = 1
     DATA_PENDING_SYNC = 2
