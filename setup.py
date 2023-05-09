@@ -17,7 +17,7 @@ DESCRIPTION = 'GoPlus SDK'
 URL = 'https://github.com/GoPlusSecurity/goplus-sdk-python'
 EMAIL = 'service@gopluslabs.io'
 AUTHOR = 'GoPlus'
-REQUIRES_PYTHON = '>=3.10.6'
+REQUIRES_PYTHON = '>=3.10'
 VERSION = ''
 # What packages are required for this module to be executed?
 REQUIRED = ['certifi >= 14.05.14', 'six >= 1.10', 'python_dateutil >= 2.5.3', 'urllib3 >= 1.15.1']
@@ -115,8 +115,7 @@ setup(
     classifiers=[
         'Intended Audience :: Developers',
         'License :: OSI Approved :: Apache Software License',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.10',
     ],
     # $ setup.py publish support.
     cmdclass={
