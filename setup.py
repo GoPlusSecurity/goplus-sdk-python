@@ -15,7 +15,7 @@ from setuptools import find_packages, setup, Command
 NAME = 'goplus'
 DESCRIPTION = 'GoPlus SDK'
 URL = 'https://github.com/GoPlusSecurity/goplus-sdk-python'
-EMAIL = ''
+EMAIL = 'service@gopluslabs.io'
 AUTHOR = 'GoPlus'
 REQUIRES_PYTHON = '>=3.10.6'
 VERSION = ''
