@@ -4,7 +4,7 @@ repos:
   hooks:
   - id: insert-license
     name: Add license for all python files
-    exclude: ^(\.github|examples)/.*$
+    exclude: ^(\.github|examples|swagger_client)/.*$
     types: [python]
     args:
     - --comment-style
@@ -23,6 +23,7 @@ repos:
   rev: 3.9.2
   hooks:
   - id: flake8
+    exclude: '^swagger_client/'
 - repo: https://github.com/PyCQA/isort
   rev: 5.12.0
   hooks:
@@ -36,7 +37,8 @@ repos:
   rev: v1.2.0
   hooks:
   - id: mypy
-    exclude: ^swagger_client/
+    exclude: '^swagger_client/'
     additional_dependencies:
     - 'sqlalchemy[mypy]==2.0.9'
     - 'types-python-dateutil'
+    - 'types-six'
