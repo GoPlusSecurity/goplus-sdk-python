@@ -31,6 +31,7 @@ class ParseAbiDataRequest(object):
         'chain_id': 'str',
         'contract_address': 'str',
         'data': 'str',
+        'input': 'dict(str, object)',
         'signer': 'str',
         'transcation_type': 'str'
     }
@@ -39,15 +40,17 @@ class ParseAbiDataRequest(object):
         'chain_id': 'chain_id',
         'contract_address': 'contract_address',
         'data': 'data',
+        'input': 'input',
         'signer': 'signer',
         'transcation_type': 'transcation_type'
     }
 
-    def __init__(self, chain_id=None, contract_address=None, data=None, signer=None, transcation_type=None):  # noqa: E501
+    def __init__(self, chain_id=None, contract_address=None, data=None, input=None, signer=None, transcation_type=None):  # noqa: E501
         """ParseAbiDataRequest - a model defined in Swagger"""  # noqa: E501
         self._chain_id = None
         self._contract_address = None
         self._data = None
+        self._input = None
         self._signer = None
         self._transcation_type = None
         self.discriminator = None
@@ -55,6 +58,8 @@ class ParseAbiDataRequest(object):
         if contract_address is not None:
             self.contract_address = contract_address
         self.data = data
+        if input is not None:
+            self.input = input
         if signer is not None:
             self.signer = signer
         if transcation_type is not None:
@@ -134,6 +139,29 @@ class ParseAbiDataRequest(object):
         self._data = data
 
     @property
+    def input(self):
+        """Gets the input of this ParseAbiDataRequest.  # noqa: E501
+
+        input info  # noqa: E501
+
+        :return: The input of this ParseAbiDataRequest.  # noqa: E501
+        :rtype: dict(str, object)
+        """
+        return self._input
+
+    @input.setter
+    def input(self, input):
+        """Sets the input of this ParseAbiDataRequest.
+
+        input info  # noqa: E501
+
+        :param input: The input of this ParseAbiDataRequest.  # noqa: E501
+        :type: dict(str, object)
+        """
+
+        self._input = input
+
+    @property
     def signer(self):
         """Gets the signer of this ParseAbiDataRequest.  # noqa: E501
 
@@ -176,7 +204,7 @@ class ParseAbiDataRequest(object):
         :param transcation_type: The transcation_type of this ParseAbiDataRequest.  # noqa: E501
         :type: str
         """
-        allowed_values = ["COMMON", "ETH_SIGNTYPEDDATA_V4", "PERSONAL_SIGN", "ETH_SIGN"]  # noqa: E501
+        allowed_values = ["common", "eth_signTypedData_v4", "personal_sign", "eth_sign"]  # noqa: E501
         if transcation_type not in allowed_values:
             raise ValueError(
                 "Invalid value for `transcation_type` ({0}), must be one of {1}"  # noqa: E501
