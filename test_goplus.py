@@ -98,7 +98,7 @@ class PhishingSiteTest(unittest.TestCase):
 
 
 class RugPullTest(unittest.TestCase):
-    def test_rug_pull_detection(self):
+    def test_rug_pull_security(self):
         res = RugPull().rug_pull_security(
             chain_id="1", address="0x6B175474E89094C44Da98b954EedeAC495271d0F"
         )
