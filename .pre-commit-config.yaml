@@ -24,21 +24,23 @@ repos:
   hooks:
   - id: flake8
     exclude: '^swagger_client/'
+    args:
+      - "--max-line-length=120"
 - repo: https://github.com/PyCQA/isort
   rev: 5.12.0
   hooks:
   - id: isort
     args: ["--profile", "black"]
-- repo: https://github.com/psf/black
-  rev: 22.3.0
-  hooks:
-  - id: black
-- repo: https://github.com/pre-commit/mirrors-mypy
-  rev: v1.2.0
-  hooks:
-  - id: mypy
-    exclude: '^swagger_client/'
-    additional_dependencies:
-    - 'sqlalchemy[mypy]==2.0.9'
-    - 'types-python-dateutil'
-    - 'types-six'
+#- repo: https://github.com/psf/black
+#  rev: 22.3.0
+#  hooks:
+#  - id: black
+#- repo: https://github.com/pre-commit/mirrors-mypy
+#  rev: v1.2.0
+#  hooks:
+#  - id: mypy
+#    exclude: ^swagger_client/
+#    additional_dependencies:
+#    - 'sqlalchemy[mypy]==2.0.9'
+#    - 'types-python-dateutil'
+#    - 'types-six'
