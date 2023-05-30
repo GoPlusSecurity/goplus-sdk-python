@@ -31,6 +31,9 @@ from goplus.token import Token
 
 Token(access_token=None).token_security(chain_id="1", addresses=["0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"])
 
+# set timeout seconds
+Token(access_token=None).token_security(chain_id="1", addresses=["0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"], **{"_request_timeout": 10})
+
 ```
 
 ### Address Security
