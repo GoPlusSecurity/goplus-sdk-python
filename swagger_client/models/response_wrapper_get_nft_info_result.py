@@ -53,6 +53,7 @@ class ResponseWrapperGetNftInfoResult(object):
         'nft_description': 'str',
         'self_destruct': 'ResponseWrapperGetNftInfoResultSelfDestruct',
         'metadata_frozen': 'int',
+        'token_owner': 'str',
         'nft_verified': 'int',
         'same_nfts': 'list[ResponseWrapperGetNftInfoResultSameNfts]',
         'nft_items': 'int',
@@ -91,6 +92,7 @@ class ResponseWrapperGetNftInfoResult(object):
         'nft_description': 'nft_description',
         'self_destruct': 'self_destruct',
         'metadata_frozen': 'metadata_frozen',
+        'token_owner': 'token_owner',
         'nft_verified': 'nft_verified',
         'same_nfts': 'same_nfts',
         'nft_items': 'nft_items',
@@ -103,7 +105,7 @@ class ResponseWrapperGetNftInfoResult(object):
         'create_block_number': 'create_block_number'
     }
 
-    def __init__(self, traded_volume_24h=None, total_volume=None, red_check_mark=None, nft_proxy=None, restricted_approval=None, highest_price=None, transfer_without_approval=None, discord_url=None, nft_open_source=None, privileged_minting=None, nft_owner_number=None, trust_list=None, token_id=None, lowest_price_24h=None, average_price_24h=None, nft_erc=None, creator_address=None, medium_url=None, malicious_nft_contract=None, privileged_burn=None, twitter_url=None, nft_symbol=None, nft_description=None, self_destruct=None, metadata_frozen=None, nft_verified=None, same_nfts=None, nft_items=None, oversupply_minting=None, nft_name=None, website_url=None, github_url=None, telegram_url=None, sales_24h=None, create_block_number=None):  # noqa: E501
+    def __init__(self, traded_volume_24h=None, total_volume=None, red_check_mark=None, nft_proxy=None, restricted_approval=None, highest_price=None, transfer_without_approval=None, discord_url=None, nft_open_source=None, privileged_minting=None, nft_owner_number=None, trust_list=None, token_id=None, lowest_price_24h=None, average_price_24h=None, nft_erc=None, creator_address=None, medium_url=None, malicious_nft_contract=None, privileged_burn=None, twitter_url=None, nft_symbol=None, nft_description=None, self_destruct=None, metadata_frozen=None, token_owner=None, nft_verified=None, same_nfts=None, nft_items=None, oversupply_minting=None, nft_name=None, website_url=None, github_url=None, telegram_url=None, sales_24h=None, create_block_number=None):  # noqa: E501
         """ResponseWrapperGetNftInfoResult - a model defined in Swagger"""  # noqa: E501
         self._traded_volume_24h = None
         self._total_volume = None
@@ -130,6 +132,7 @@ class ResponseWrapperGetNftInfoResult(object):
         self._nft_description = None
         self._self_destruct = None
         self._metadata_frozen = None
+        self._token_owner = None
         self._nft_verified = None
         self._same_nfts = None
         self._nft_items = None
@@ -191,6 +194,8 @@ class ResponseWrapperGetNftInfoResult(object):
             self.self_destruct = self_destruct
         if metadata_frozen is not None:
             self.metadata_frozen = metadata_frozen
+        if token_owner is not None:
+            self.token_owner = token_owner
         if nft_verified is not None:
             self.nft_verified = nft_verified
         if same_nfts is not None:
@@ -778,6 +783,29 @@ class ResponseWrapperGetNftInfoResult(object):
         """
 
         self._metadata_frozen = metadata_frozen
+
+    @property
+    def token_owner(self):
+        """Gets the token_owner of this ResponseWrapperGetNftInfoResult.  # noqa: E501
+
+        token_owner  # noqa: E501
+
+        :return: The token_owner of this ResponseWrapperGetNftInfoResult.  # noqa: E501
+        :rtype: str
+        """
+        return self._token_owner
+
+    @token_owner.setter
+    def token_owner(self, token_owner):
+        """Sets the token_owner of this ResponseWrapperGetNftInfoResult.
+
+        token_owner  # noqa: E501
+
+        :param token_owner: The token_owner of this ResponseWrapperGetNftInfoResult.  # noqa: E501
+        :type: str
+        """
+
+        self._token_owner = token_owner
 
     @property
     def nft_verified(self):
