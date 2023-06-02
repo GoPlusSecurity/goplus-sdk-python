@@ -34,7 +34,7 @@ class ResponseWrapperGetDefiInfoResult(object):
         'is_open_source': 'int',
         'blacklist': 'int',
         'contract_name': 'str',
-        'selfdestruct': 'str',
+        'selfdestruct': 'int',
         'is_proxy': 'int',
         'approval_abuse': 'int'
     }
@@ -225,7 +225,7 @@ class ResponseWrapperGetDefiInfoResult(object):
         It describes whether this contract can self destruct. \"1\" means true;  \"0\" means false; “-1” means unknown.  # noqa: E501
 
         :return: The selfdestruct of this ResponseWrapperGetDefiInfoResult.  # noqa: E501
-        :rtype: str
+        :rtype: int
         """
         return self._selfdestruct
 
@@ -236,7 +236,7 @@ class ResponseWrapperGetDefiInfoResult(object):
         It describes whether this contract can self destruct. \"1\" means true;  \"0\" means false; “-1” means unknown.  # noqa: E501
 
         :param selfdestruct: The selfdestruct of this ResponseWrapperGetDefiInfoResult.  # noqa: E501
-        :type: str
+        :type: int
         """
 
         self._selfdestruct = selfdestruct
