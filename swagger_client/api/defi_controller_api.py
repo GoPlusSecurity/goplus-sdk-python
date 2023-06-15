@@ -32,47 +32,47 @@ class DefiControllerApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def get_defi_info_using_get(self, contract_addresses, chain_id, **kwargs):  # noqa: E501
+    def get_defi_info_using_get(self, chain_id, contract_addresses, **kwargs):  # noqa: E501
         """Rug-pull Detection API Beta  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_defi_info_using_get(contract_addresses, chain_id, async_req=True)
+        >>> thread = api.get_defi_info_using_get(chain_id, contract_addresses, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str contract_addresses: Defi protocol address (required)
         :param str chain_id: Chain id, (eth: 1, bsc: 56) (required)
+        :param str contract_addresses: Defi protocol address (required)
         :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
-        :return: ResponseWrapperGetDefiInfo
+        :return: GetDefiInfoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.get_defi_info_using_get_with_http_info(contract_addresses, chain_id, **kwargs)  # noqa: E501
+            return self.get_defi_info_using_get_with_http_info(chain_id, contract_addresses, **kwargs)  # noqa: E501
         else:
-            (data) = self.get_defi_info_using_get_with_http_info(contract_addresses, chain_id, **kwargs)  # noqa: E501
+            (data) = self.get_defi_info_using_get_with_http_info(chain_id, contract_addresses, **kwargs)  # noqa: E501
             return data
 
-    def get_defi_info_using_get_with_http_info(self, contract_addresses, chain_id, **kwargs):  # noqa: E501
+    def get_defi_info_using_get_with_http_info(self, chain_id, contract_addresses, **kwargs):  # noqa: E501
         """Rug-pull Detection API Beta  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_defi_info_using_get_with_http_info(contract_addresses, chain_id, async_req=True)
+        >>> thread = api.get_defi_info_using_get_with_http_info(chain_id, contract_addresses, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str contract_addresses: Defi protocol address (required)
         :param str chain_id: Chain id, (eth: 1, bsc: 56) (required)
+        :param str contract_addresses: Defi protocol address (required)
         :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
-        :return: ResponseWrapperGetDefiInfo
+        :return: GetDefiInfoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['contract_addresses', 'chain_id', 'authorization']  # noqa: E501
+        all_params = ['chain_id', 'contract_addresses', 'authorization']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -87,14 +87,14 @@ class DefiControllerApi(object):
                 )
             params[key] = val
         del params['kwargs']
-        # verify the required parameter 'contract_addresses' is set
-        if ('contract_addresses' not in params or
-                params['contract_addresses'] is None):
-            raise ValueError("Missing the required parameter `contract_addresses` when calling `get_defi_info_using_get`")  # noqa: E501
         # verify the required parameter 'chain_id' is set
         if ('chain_id' not in params or
                 params['chain_id'] is None):
             raise ValueError("Missing the required parameter `chain_id` when calling `get_defi_info_using_get`")  # noqa: E501
+        # verify the required parameter 'contract_addresses' is set
+        if ('contract_addresses' not in params or
+                params['contract_addresses'] is None):
+            raise ValueError("Missing the required parameter `contract_addresses` when calling `get_defi_info_using_get`")  # noqa: E501
 
         collection_formats = {}
 
@@ -129,7 +129,7 @@ class DefiControllerApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='ResponseWrapperGetDefiInfo',  # noqa: E501
+            response_type='GetDefiInfoResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
