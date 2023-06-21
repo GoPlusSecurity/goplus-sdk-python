@@ -44,7 +44,7 @@ class DefiControllerApi(object):
         :param str contract_addresses: Defi protocol address (required)
         :param str chain_id: Chain id, (eth: 1, bsc: 56) (required)
         :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
-        :return: ResponseWrapperGetDefiInfo
+        :return: GetDefiInfoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -67,7 +67,7 @@ class DefiControllerApi(object):
         :param str contract_addresses: Defi protocol address (required)
         :param str chain_id: Chain id, (eth: 1, bsc: 56) (required)
         :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
-        :return: ResponseWrapperGetDefiInfo
+        :return: GetDefiInfoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -129,7 +129,7 @@ class DefiControllerApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='ResponseWrapperGetDefiInfo',  # noqa: E501
+            response_type='GetDefiInfoResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
