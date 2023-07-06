@@ -32,7 +32,7 @@ class ResponseWrapperTokenSecurityLpHolders(object):
         'is_contract': 'int',
         'address': 'str',
         'balance': 'str',
-        'locked_detail': 'list[str]',
+        'locked_detail': 'list[ResponseWrapperTokenSecurityLockedDetail]',
         'tag': 'str',
         'percent': 'str'
     }
@@ -168,10 +168,10 @@ class ResponseWrapperTokenSecurityLpHolders(object):
     def locked_detail(self):
         """Gets the locked_detail of this ResponseWrapperTokenSecurityLpHolders.  # noqa: E501
 
-        It is an array, decribes lock position info of this holder, only shows when \"locked\": 1. This Array may contain multiple objects for multiple locking info. In every objetc, \"amount\" describes the number of token locked, \"end_time\" describes when the token will be unlocked, \"opt_time\" describes when the token was locked.(Notice:When \"locked\":0, or lock address is a black hole address,  \"locked_detail\" will be no return.)  # noqa: E501
+        It is an array, decribes lock position info of this holder, only shows when \"locked\": 1. This Array may contain multiple objects for multiple locking info. (Notice:When \"locked\":0, or lock address is a black hole address,  \"locked_detail\" will be no return.)  # noqa: E501
 
         :return: The locked_detail of this ResponseWrapperTokenSecurityLpHolders.  # noqa: E501
-        :rtype: list[str]
+        :rtype: list[ResponseWrapperTokenSecurityLockedDetail]
         """
         return self._locked_detail
 
@@ -179,10 +179,10 @@ class ResponseWrapperTokenSecurityLpHolders(object):
     def locked_detail(self, locked_detail):
         """Sets the locked_detail of this ResponseWrapperTokenSecurityLpHolders.
 
-        It is an array, decribes lock position info of this holder, only shows when \"locked\": 1. This Array may contain multiple objects for multiple locking info. In every objetc, \"amount\" describes the number of token locked, \"end_time\" describes when the token will be unlocked, \"opt_time\" describes when the token was locked.(Notice:When \"locked\":0, or lock address is a black hole address,  \"locked_detail\" will be no return.)  # noqa: E501
+        It is an array, decribes lock position info of this holder, only shows when \"locked\": 1. This Array may contain multiple objects for multiple locking info. (Notice:When \"locked\":0, or lock address is a black hole address,  \"locked_detail\" will be no return.)  # noqa: E501
 
         :param locked_detail: The locked_detail of this ResponseWrapperTokenSecurityLpHolders.  # noqa: E501
-        :type: list[str]
+        :type: list[ResponseWrapperTokenSecurityLockedDetail]
         """
 
         self._locked_detail = locked_detail
