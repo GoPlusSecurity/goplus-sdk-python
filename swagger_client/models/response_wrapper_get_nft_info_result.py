@@ -880,7 +880,7 @@ class ResponseWrapperGetNftInfoResult(object):
     def oversupply_minting(self):
         """Gets the oversupply_minting of this ResponseWrapperGetNftInfoResult.  # noqa: E501
 
-        It describes whether this NFT owner can bypass the maximum amount of minting specified in the contract, and continue to mint NFTs beyond this limit.  \"1\" means true;  \"0\" means false;  \"Null\" means unknown.(Notice:Oversupply minting refers to the existence of a special mint method in the NFT contract — the owner can bypass the maximum amount of minting specified in the contract, and continue to mint NFTs beyond this limit.)  # noqa: E501
+        It describes whether this NFT owner can bypass the maximum amount of minting specified in the contract, and continue to mint NFTs beyond this limit.  \"1\" means true;  \"0\" means false;  \"Null\" means unknown.(Notice:Oversupply minting refers to the existence of a special mint method in the NFT contract - the owner can bypass the maximum amount of minting specified in the contract, and continue to mint NFTs beyond this limit.)  # noqa: E501
 
         :return: The oversupply_minting of this ResponseWrapperGetNftInfoResult.  # noqa: E501
         :rtype: int
@@ -891,7 +891,7 @@ class ResponseWrapperGetNftInfoResult(object):
     def oversupply_minting(self, oversupply_minting):
         """Sets the oversupply_minting of this ResponseWrapperGetNftInfoResult.
 
-        It describes whether this NFT owner can bypass the maximum amount of minting specified in the contract, and continue to mint NFTs beyond this limit.  \"1\" means true;  \"0\" means false;  \"Null\" means unknown.(Notice:Oversupply minting refers to the existence of a special mint method in the NFT contract — the owner can bypass the maximum amount of minting specified in the contract, and continue to mint NFTs beyond this limit.)  # noqa: E501
+        It describes whether this NFT owner can bypass the maximum amount of minting specified in the contract, and continue to mint NFTs beyond this limit.  \"1\" means true;  \"0\" means false;  \"Null\" means unknown.(Notice:Oversupply minting refers to the existence of a special mint method in the NFT contract - the owner can bypass the maximum amount of minting specified in the contract, and continue to mint NFTs beyond this limit.)  # noqa: E501
 
         :param oversupply_minting: The oversupply_minting of this ResponseWrapperGetNftInfoResult.  # noqa: E501
         :type: int
