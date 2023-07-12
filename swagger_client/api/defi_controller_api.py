@@ -43,7 +43,7 @@ class DefiControllerApi(object):
         :param async_req bool
         :param str contract_addresses: Defi protocol address (required)
         :param str chain_id: Chain id, (eth: 1, bsc: 56) (required)
-        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
+        :param str authorization: Authorization (test: Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
         :return: GetDefiInfoResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -66,7 +66,7 @@ class DefiControllerApi(object):
         :param async_req bool
         :param str contract_addresses: Defi protocol address (required)
         :param str chain_id: Chain id, (eth: 1, bsc: 56) (required)
-        :param str authorization: Authorization (test：Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
+        :param str authorization: Authorization (test: Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
         :return: GetDefiInfoResponse
                  If the method is called asynchronously,
                  returns the request thread.

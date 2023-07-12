@@ -251,7 +251,7 @@ class ResponseWrapperTokenSecurityResult(object):
     def note(self):
         """Gets the note of this ResponseWrapperTokenSecurityResult.  # noqa: E501
 
-        It describes whether the contract has other things investors need to know.  Example:  \"note”: “Contract owner is a multisign contract.”(Notice:(1) If we haven't found any other thing which is valuable yet, there will be no return.  (2) Type: string.)  # noqa: E501
+        It describes whether the contract has other things investors need to know.  Example:  \"note\": \"Contract owner is a multisign contract.\"(Notice:(1) If we haven't found any other thing which is valuable yet, there will be no return.  (2) Type: string.)  # noqa: E501
 
         :return: The note of this ResponseWrapperTokenSecurityResult.  # noqa: E501
         :rtype: str
@@ -262,7 +262,7 @@ class ResponseWrapperTokenSecurityResult(object):
     def note(self, note):
         """Sets the note of this ResponseWrapperTokenSecurityResult.
 
-        It describes whether the contract has other things investors need to know.  Example:  \"note”: “Contract owner is a multisign contract.”(Notice:(1) If we haven't found any other thing which is valuable yet, there will be no return.  (2) Type: string.)  # noqa: E501
+        It describes whether the contract has other things investors need to know.  Example:  \"note\": \"Contract owner is a multisign contract.\"(Notice:(1) If we haven't found any other thing which is valuable yet, there will be no return.  (2) Type: string.)  # noqa: E501
 
         :param note: The note of this ResponseWrapperTokenSecurityResult.  # noqa: E501
         :type: str
@@ -343,7 +343,7 @@ class ResponseWrapperTokenSecurityResult(object):
     def other_potential_risks(self):
         """Gets the other_potential_risks of this ResponseWrapperTokenSecurityResult.  # noqa: E501
 
-        It describes whether the contract has other potential risks. Example: “other_potential_risks”: “Owner can set different transaction taxes for each user, which can trigger serious losses.”(Notice:(1) If we haven't found any other potential risk yet, there will be no return.  (2) Type: string.)  # noqa: E501
+        It describes whether the contract has other potential risks. Example: \"other_potential_risks\": \"Owner can set different transaction taxes for each user, which can trigger serious losses.\"(Notice:(1) If we haven't found any other potential risk yet, there will be no return.  (2) Type: string.)  # noqa: E501
 
         :return: The other_potential_risks of this ResponseWrapperTokenSecurityResult.  # noqa: E501
         :rtype: str
@@ -354,7 +354,7 @@ class ResponseWrapperTokenSecurityResult(object):
     def other_potential_risks(self, other_potential_risks):
         """Sets the other_potential_risks of this ResponseWrapperTokenSecurityResult.
 
-        It describes whether the contract has other potential risks. Example: “other_potential_risks”: “Owner can set different transaction taxes for each user, which can trigger serious losses.”(Notice:(1) If we haven't found any other potential risk yet, there will be no return.  (2) Type: string.)  # noqa: E501
+        It describes whether the contract has other potential risks. Example: \"other_potential_risks\": \"Owner can set different transaction taxes for each user, which can trigger serious losses.\"(Notice:(1) If we haven't found any other potential risk yet, there will be no return.  (2) Type: string.)  # noqa: E501
 
         :param other_potential_risks: The other_potential_risks of this ResponseWrapperTokenSecurityResult.  # noqa: E501
         :type: str
@@ -412,7 +412,7 @@ class ResponseWrapperTokenSecurityResult(object):
     def hidden_owner(self):
         """Gets the hidden_owner of this ResponseWrapperTokenSecurityResult.  # noqa: E501
 
-        It describes whether the contract has hidden owners. For contract with a hidden owner, developer can still manipulate the contract even if the ownership has been abandoned. “1” means true; \"0\" means false; No return means unknown.(Notice:(1) When \"is_open_source\": \"0\", there will be no return.  (2) Sometimes, when \"is_proxy\": \"1\", there will be no return.  (3) Hidden owner is often used by developers to hide ownership and is often accompanied by malicious functionality. When the hidden owner exists, it is assumed that ownership has not been abandoned.)  # noqa: E501
+        It describes whether the contract has hidden owners. For contract with a hidden owner, developer can still manipulate the contract even if the ownership has been abandoned. \"1\" means true; \"0\" means false; No return means unknown.(Notice:(1) When \"is_open_source\": \"0\", there will be no return.  (2) Sometimes, when \"is_proxy\": \"1\", there will be no return.  (3) Hidden owner is often used by developers to hide ownership and is often accompanied by malicious functionality. When the hidden owner exists, it is assumed that ownership has not been abandoned.)  # noqa: E501
 
         :return: The hidden_owner of this ResponseWrapperTokenSecurityResult.  # noqa: E501
         :rtype: str
@@ -423,7 +423,7 @@ class ResponseWrapperTokenSecurityResult(object):
     def hidden_owner(self, hidden_owner):
         """Sets the hidden_owner of this ResponseWrapperTokenSecurityResult.
 
-        It describes whether the contract has hidden owners. For contract with a hidden owner, developer can still manipulate the contract even if the ownership has been abandoned. “1” means true; \"0\" means false; No return means unknown.(Notice:(1) When \"is_open_source\": \"0\", there will be no return.  (2) Sometimes, when \"is_proxy\": \"1\", there will be no return.  (3) Hidden owner is often used by developers to hide ownership and is often accompanied by malicious functionality. When the hidden owner exists, it is assumed that ownership has not been abandoned.)  # noqa: E501
+        It describes whether the contract has hidden owners. For contract with a hidden owner, developer can still manipulate the contract even if the ownership has been abandoned. \"1\" means true; \"0\" means false; No return means unknown.(Notice:(1) When \"is_open_source\": \"0\", there will be no return.  (2) Sometimes, when \"is_proxy\": \"1\", there will be no return.  (3) Hidden owner is often used by developers to hide ownership and is often accompanied by malicious functionality. When the hidden owner exists, it is assumed that ownership has not been abandoned.)  # noqa: E501
 
         :param hidden_owner: The hidden_owner of this ResponseWrapperTokenSecurityResult.  # noqa: E501
         :type: str
@@ -1148,7 +1148,7 @@ class ResponseWrapperTokenSecurityResult(object):
     def cannot_buy(self):
         """Gets the cannot_buy of this ResponseWrapperTokenSecurityResult.  # noqa: E501
 
-        It deiscribes whether the Token can be bought. \"1\" means true;  \"0\" means false;  No return means unknown.(Notice:(1) Generally, \"cannot_buy\": \"1\" would be found in Reward Tokens. Such Tokens are issued as rewards for some on-chain applications and cannot be bought directly by users. (2) Sometimes token's anti-bot mechanism would affect our sandbox system, causing the display of \"buy_tax\": \"1\". (3) When “cannot_buy”: \"1\", our sandbox system might be bloked, causing the display of \"buy_tax\": \"1\" and \"sell_tax\": \"1\")  # noqa: E501
+        It deiscribes whether the Token can be bought. \"1\" means true;  \"0\" means false;  No return means unknown.(Notice:(1) Generally, \"cannot_buy\": \"1\" would be found in Reward Tokens. Such Tokens are issued as rewards for some on-chain applications and cannot be bought directly by users. (2) Sometimes token's anti-bot mechanism would affect our sandbox system, causing the display of \"buy_tax\": \"1\". (3) When \"cannot_buy\": \"1\", our sandbox system might be bloked, causing the display of \"buy_tax\": \"1\" and \"sell_tax\": \"1\")  # noqa: E501
 
         :return: The cannot_buy of this ResponseWrapperTokenSecurityResult.  # noqa: E501
         :rtype: str
@@ -1159,7 +1159,7 @@ class ResponseWrapperTokenSecurityResult(object):
     def cannot_buy(self, cannot_buy):
         """Sets the cannot_buy of this ResponseWrapperTokenSecurityResult.
 
-        It deiscribes whether the Token can be bought. \"1\" means true;  \"0\" means false;  No return means unknown.(Notice:(1) Generally, \"cannot_buy\": \"1\" would be found in Reward Tokens. Such Tokens are issued as rewards for some on-chain applications and cannot be bought directly by users. (2) Sometimes token's anti-bot mechanism would affect our sandbox system, causing the display of \"buy_tax\": \"1\". (3) When “cannot_buy”: \"1\", our sandbox system might be bloked, causing the display of \"buy_tax\": \"1\" and \"sell_tax\": \"1\")  # noqa: E501
+        It deiscribes whether the Token can be bought. \"1\" means true;  \"0\" means false;  No return means unknown.(Notice:(1) Generally, \"cannot_buy\": \"1\" would be found in Reward Tokens. Such Tokens are issued as rewards for some on-chain applications and cannot be bought directly by users. (2) Sometimes token's anti-bot mechanism would affect our sandbox system, causing the display of \"buy_tax\": \"1\". (3) When \"cannot_buy\": \"1\", our sandbox system might be bloked, causing the display of \"buy_tax\": \"1\" and \"sell_tax\": \"1\")  # noqa: E501
 
         :param cannot_buy: The cannot_buy of this ResponseWrapperTokenSecurityResult.  # noqa: E501
         :type: str

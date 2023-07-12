@@ -76,7 +76,7 @@ class ResponseWrapperTokenSecurityLpHolders(object):
     def is_locked(self):
         """Gets the is_locked of this ResponseWrapperTokenSecurityLpHolders.  # noqa: E501
 
-        It describes whether the tokens owned by the holder are locked \"1\" means true; \"0\" means false;  (3) “tag” describes the address's public tag. Example:Burn (Notice:About \"locked\": We only support the token lock addresses or black hole addresses that we have included. )  # noqa: E501
+        It describes whether the tokens owned by the holder are locked \"1\" means true; \"0\" means false;  (3) \"tag\" describes the address's public tag. Example:Burn (Notice:About \"locked\": We only support the token lock addresses or black hole addresses that we have included. )  # noqa: E501
 
         :return: The is_locked of this ResponseWrapperTokenSecurityLpHolders.  # noqa: E501
         :rtype: int
@@ -87,7 +87,7 @@ class ResponseWrapperTokenSecurityLpHolders(object):
     def is_locked(self, is_locked):
         """Sets the is_locked of this ResponseWrapperTokenSecurityLpHolders.
 
-        It describes whether the tokens owned by the holder are locked \"1\" means true; \"0\" means false;  (3) “tag” describes the address's public tag. Example:Burn (Notice:About \"locked\": We only support the token lock addresses or black hole addresses that we have included. )  # noqa: E501
+        It describes whether the tokens owned by the holder are locked \"1\" means true; \"0\" means false;  (3) \"tag\" describes the address's public tag. Example:Burn (Notice:About \"locked\": We only support the token lock addresses or black hole addresses that we have included. )  # noqa: E501
 
         :param is_locked: The is_locked of this ResponseWrapperTokenSecurityLpHolders.  # noqa: E501
         :type: int
