@@ -222,7 +222,7 @@ class GetDefiInfoResponseResult(object):
     def selfdestruct(self):
         """Gets the selfdestruct of this GetDefiInfoResponseResult.  # noqa: E501
 
-        It describes whether this contract can self destruct. \"1\" means true;  \"0\" means false; “-1” means unknown.  # noqa: E501
+        It describes whether this contract can self destruct. \"1\" means true;  \"0\" means false; \"-1\" means unknown.  # noqa: E501
 
         :return: The selfdestruct of this GetDefiInfoResponseResult.  # noqa: E501
         :rtype: int
@@ -233,7 +233,7 @@ class GetDefiInfoResponseResult(object):
     def selfdestruct(self, selfdestruct):
         """Sets the selfdestruct of this GetDefiInfoResponseResult.
 
-        It describes whether this contract can self destruct. \"1\" means true;  \"0\" means false; “-1” means unknown.  # noqa: E501
+        It describes whether this contract can self destruct. \"1\" means true;  \"0\" means false; \"-1\" means unknown.  # noqa: E501
 
         :param selfdestruct: The selfdestruct of this GetDefiInfoResponseResult.  # noqa: E501
         :type: int
@@ -245,7 +245,7 @@ class GetDefiInfoResponseResult(object):
     def is_proxy(self):
         """Gets the is_proxy of this GetDefiInfoResponseResult.  # noqa: E501
 
-        It describes whether this contract has a proxy contract.  \"1\" means true;  \"0\" means false; “-1” means unknown.  # noqa: E501
+        It describes whether this contract has a proxy contract.  \"1\" means true;  \"0\" means false; \"-1\" means unknown.  # noqa: E501
 
         :return: The is_proxy of this GetDefiInfoResponseResult.  # noqa: E501
         :rtype: int
@@ -256,7 +256,7 @@ class GetDefiInfoResponseResult(object):
     def is_proxy(self, is_proxy):
         """Sets the is_proxy of this GetDefiInfoResponseResult.
 
-        It describes whether this contract has a proxy contract.  \"1\" means true;  \"0\" means false; “-1” means unknown.  # noqa: E501
+        It describes whether this contract has a proxy contract.  \"1\" means true;  \"0\" means false; \"-1\" means unknown.  # noqa: E501
 
         :param is_proxy: The is_proxy of this GetDefiInfoResponseResult.  # noqa: E501
         :type: int
@@ -268,7 +268,7 @@ class GetDefiInfoResponseResult(object):
     def approval_abuse(self):
         """Gets the approval_abuse of this GetDefiInfoResponseResult.  # noqa: E501
 
-        It describes whether the owner can spend the allowance that obtained by the contract. If so, this function could potentially be abused to steal user assets. \"1\" means true;  \"0\" means false; “-1” means unknown.  # noqa: E501
+        It describes whether the owner can spend the allowance that obtained by the contract. If so, this function could potentially be abused to steal user assets. \"1\" means true;  \"0\" means false; \"-1\" means unknown.  # noqa: E501
 
         :return: The approval_abuse of this GetDefiInfoResponseResult.  # noqa: E501
         :rtype: int
@@ -279,7 +279,7 @@ class GetDefiInfoResponseResult(object):
     def approval_abuse(self, approval_abuse):
         """Sets the approval_abuse of this GetDefiInfoResponseResult.
 
-        It describes whether the owner can spend the allowance that obtained by the contract. If so, this function could potentially be abused to steal user assets. \"1\" means true;  \"0\" means false; “-1” means unknown.  # noqa: E501
+        It describes whether the owner can spend the allowance that obtained by the contract. If so, this function could potentially be abused to steal user assets. \"1\" means true;  \"0\" means false; \"-1\" means unknown.  # noqa: E501
 
         :param approval_abuse: The approval_abuse of this GetDefiInfoResponseResult.  # noqa: E501
         :type: int

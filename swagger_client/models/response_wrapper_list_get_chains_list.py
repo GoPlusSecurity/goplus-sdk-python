@@ -56,7 +56,7 @@ class ResponseWrapperListGetChainsList(object):
     def code(self):
         """Gets the code of this ResponseWrapperListGetChainsList.  # noqa: E501
 
-        Code 1：Success  # noqa: E501
+        Code 1: Success  # noqa: E501
 
         :return: The code of this ResponseWrapperListGetChainsList.  # noqa: E501
         :rtype: int
@@ -67,7 +67,7 @@ class ResponseWrapperListGetChainsList(object):
     def code(self, code):
         """Sets the code of this ResponseWrapperListGetChainsList.
 
-        Code 1：Success  # noqa: E501
+        Code 1: Success  # noqa: E501
 
         :param code: The code of this ResponseWrapperListGetChainsList.  # noqa: E501
         :type: int

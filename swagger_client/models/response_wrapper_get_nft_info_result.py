@@ -380,7 +380,7 @@ class ResponseWrapperGetNftInfoResult(object):
     def discord_url(self):
         """Gets the discord_url of this ResponseWrapperGetNftInfoResult.  # noqa: E501
 
-        It describes the discord url of the NFT. Return “null” means there is no discord url or didn't find the discord url.  # noqa: E501
+        It describes the discord url of the NFT. Return \"null\" means there is no discord url or didn't find the discord url.  # noqa: E501
 
         :return: The discord_url of this ResponseWrapperGetNftInfoResult.  # noqa: E501
         :rtype: str
@@ -391,7 +391,7 @@ class ResponseWrapperGetNftInfoResult(object):
     def discord_url(self, discord_url):
         """Sets the discord_url of this ResponseWrapperGetNftInfoResult.
 
-        It describes the discord url of the NFT. Return “null” means there is no discord url or didn't find the discord url.  # noqa: E501
+        It describes the discord url of the NFT. Return \"null\" means there is no discord url or didn't find the discord url.  # noqa: E501
 
         :param discord_url: The discord_url of this ResponseWrapperGetNftInfoResult.  # noqa: E501
         :type: str
@@ -585,7 +585,7 @@ class ResponseWrapperGetNftInfoResult(object):
     def creator_address(self):
         """Gets the creator_address of this ResponseWrapperGetNftInfoResult.  # noqa: E501
 
-        It describes the creator address of the NFT. Example: \"creator_address\": \"0x1ee0af784b96bb55ece98c9b15675726b0da1b6b\"; Return “null” means that we didn't find the creator address.  # noqa: E501
+        It describes the creator address of the NFT. Example: \"creator_address\": \"0x1ee0af784b96bb55ece98c9b15675726b0da1b6b\"; Return \"null\" means that we didn't find the creator address.  # noqa: E501
 
         :return: The creator_address of this ResponseWrapperGetNftInfoResult.  # noqa: E501
         :rtype: str
@@ -596,7 +596,7 @@ class ResponseWrapperGetNftInfoResult(object):
     def creator_address(self, creator_address):
         """Sets the creator_address of this ResponseWrapperGetNftInfoResult.
 
-        It describes the creator address of the NFT. Example: \"creator_address\": \"0x1ee0af784b96bb55ece98c9b15675726b0da1b6b\"; Return “null” means that we didn't find the creator address.  # noqa: E501
+        It describes the creator address of the NFT. Example: \"creator_address\": \"0x1ee0af784b96bb55ece98c9b15675726b0da1b6b\"; Return \"null\" means that we didn't find the creator address.  # noqa: E501
 
         :param creator_address: The creator_address of this ResponseWrapperGetNftInfoResult.  # noqa: E501
         :type: str
@@ -608,7 +608,7 @@ class ResponseWrapperGetNftInfoResult(object):
     def medium_url(self):
         """Gets the medium_url of this ResponseWrapperGetNftInfoResult.  # noqa: E501
 
-        It describes the medium url of the NFT. Return “null” means there is no medium url or didn't find the medium url.  # noqa: E501
+        It describes the medium url of the NFT. Return \"null\" means there is no medium url or didn't find the medium url.  # noqa: E501
 
         :return: The medium_url of this ResponseWrapperGetNftInfoResult.  # noqa: E501
         :rtype: str
@@ -619,7 +619,7 @@ class ResponseWrapperGetNftInfoResult(object):
     def medium_url(self, medium_url):
         """Sets the medium_url of this ResponseWrapperGetNftInfoResult.
 
-        It describes the medium url of the NFT. Return “null” means there is no medium url or didn't find the medium url.  # noqa: E501
+        It describes the medium url of the NFT. Return \"null\" means there is no medium url or didn't find the medium url.  # noqa: E501
 
         :param medium_url: The medium_url of this ResponseWrapperGetNftInfoResult.  # noqa: E501
         :type: str
@@ -675,7 +675,7 @@ class ResponseWrapperGetNftInfoResult(object):
     def twitter_url(self):
         """Gets the twitter_url of this ResponseWrapperGetNftInfoResult.  # noqa: E501
 
-        It describes the twitter url of the NFT. Return “null” means there is no twitter url or didn't find the twitter url.  # noqa: E501
+        It describes the twitter url of the NFT. Return \"null\" means there is no twitter url or didn't find the twitter url.  # noqa: E501
 
         :return: The twitter_url of this ResponseWrapperGetNftInfoResult.  # noqa: E501
         :rtype: str
@@ -686,7 +686,7 @@ class ResponseWrapperGetNftInfoResult(object):
     def twitter_url(self, twitter_url):
         """Sets the twitter_url of this ResponseWrapperGetNftInfoResult.
 
-        It describes the twitter url of the NFT. Return “null” means there is no twitter url or didn't find the twitter url.  # noqa: E501
+        It describes the twitter url of the NFT. Return \"null\" means there is no twitter url or didn't find the twitter url.  # noqa: E501
 
         :param twitter_url: The twitter_url of this ResponseWrapperGetNftInfoResult.  # noqa: E501
         :type: str
@@ -721,7 +721,7 @@ class ResponseWrapperGetNftInfoResult(object):
     def nft_description(self):
         """Gets the nft_description of this ResponseWrapperGetNftInfoResult.  # noqa: E501
 
-        It describes the introduction of the NFT. Return “null” means there is no description of the NFT.  # noqa: E501
+        It describes the introduction of the NFT. Return \"null\" means there is no description of the NFT.  # noqa: E501
 
         :return: The nft_description of this ResponseWrapperGetNftInfoResult.  # noqa: E501
         :rtype: str
@@ -732,7 +732,7 @@ class ResponseWrapperGetNftInfoResult(object):
     def nft_description(self, nft_description):
         """Sets the nft_description of this ResponseWrapperGetNftInfoResult.
 
-        It describes the introduction of the NFT. Return “null” means there is no description of the NFT.  # noqa: E501
+        It describes the introduction of the NFT. Return \"null\" means there is no description of the NFT.  # noqa: E501
 
         :param nft_description: The nft_description of this ResponseWrapperGetNftInfoResult.  # noqa: E501
         :type: str
@@ -926,7 +926,7 @@ class ResponseWrapperGetNftInfoResult(object):
     def website_url(self):
         """Gets the website_url of this ResponseWrapperGetNftInfoResult.  # noqa: E501
 
-        It describes the website url of the NFT. Return “null” means there is no website url or didn't find the website url.  # noqa: E501
+        It describes the website url of the NFT. Return \"null\" means there is no website url or didn't find the website url.  # noqa: E501
 
         :return: The website_url of this ResponseWrapperGetNftInfoResult.  # noqa: E501
         :rtype: str
@@ -937,7 +937,7 @@ class ResponseWrapperGetNftInfoResult(object):
     def website_url(self, website_url):
         """Sets the website_url of this ResponseWrapperGetNftInfoResult.
 
-        It describes the website url of the NFT. Return “null” means there is no website url or didn't find the website url.  # noqa: E501
+        It describes the website url of the NFT. Return \"null\" means there is no website url or didn't find the website url.  # noqa: E501
 
         :param website_url: The website_url of this ResponseWrapperGetNftInfoResult.  # noqa: E501
         :type: str
@@ -949,7 +949,7 @@ class ResponseWrapperGetNftInfoResult(object):
     def github_url(self):
         """Gets the github_url of this ResponseWrapperGetNftInfoResult.  # noqa: E501
 
-        It describes the github url of the NFT. Return “null” means there is no github url or didn't find the github url.  # noqa: E501
+        It describes the github url of the NFT. Return \"null\" means there is no github url or didn't find the github url.  # noqa: E501
 
         :return: The github_url of this ResponseWrapperGetNftInfoResult.  # noqa: E501
         :rtype: str
@@ -960,7 +960,7 @@ class ResponseWrapperGetNftInfoResult(object):
     def github_url(self, github_url):
         """Sets the github_url of this ResponseWrapperGetNftInfoResult.
 
-        It describes the github url of the NFT. Return “null” means there is no github url or didn't find the github url.  # noqa: E501
+        It describes the github url of the NFT. Return \"null\" means there is no github url or didn't find the github url.  # noqa: E501
 
         :param github_url: The github_url of this ResponseWrapperGetNftInfoResult.  # noqa: E501
         :type: str
@@ -972,7 +972,7 @@ class ResponseWrapperGetNftInfoResult(object):
     def telegram_url(self):
         """Gets the telegram_url of this ResponseWrapperGetNftInfoResult.  # noqa: E501
 
-        It describes the telegram url of the NFT. Return “null” means there is no telegram url or didn't find the telegram url.  # noqa: E501
+        It describes the telegram url of the NFT. Return \"null\" means there is no telegram url or didn't find the telegram url.  # noqa: E501
 
         :return: The telegram_url of this ResponseWrapperGetNftInfoResult.  # noqa: E501
         :rtype: str
@@ -983,7 +983,7 @@ class ResponseWrapperGetNftInfoResult(object):
     def telegram_url(self, telegram_url):
         """Sets the telegram_url of this ResponseWrapperGetNftInfoResult.
 
-        It describes the telegram url of the NFT. Return “null” means there is no telegram url or didn't find the telegram url.  # noqa: E501
+        It describes the telegram url of the NFT. Return \"null\" means there is no telegram url or didn't find the telegram url.  # noqa: E501
 
         :param telegram_url: The telegram_url of this ResponseWrapperGetNftInfoResult.  # noqa: E501
         :type: str
@@ -1018,7 +1018,7 @@ class ResponseWrapperGetNftInfoResult(object):
     def create_block_number(self):
         """Gets the create_block_number of this ResponseWrapperGetNftInfoResult.  # noqa: E501
 
-        It describes the number of blocks created for the NFT. Return “null” means that we didn't find the number of blocks created for the NFT.  # noqa: E501
+        It describes the number of blocks created for the NFT. Return \"null\" means that we didn't find the number of blocks created for the NFT.  # noqa: E501
 
         :return: The create_block_number of this ResponseWrapperGetNftInfoResult.  # noqa: E501
         :rtype: int
@@ -1029,7 +1029,7 @@ class ResponseWrapperGetNftInfoResult(object):
     def create_block_number(self, create_block_number):
         """Sets the create_block_number of this ResponseWrapperGetNftInfoResult.
 
-        It describes the number of blocks created for the NFT. Return “null” means that we didn't find the number of blocks created for the NFT.  # noqa: E501
+        It describes the number of blocks created for the NFT. Return \"null\" means that we didn't find the number of blocks created for the NFT.  # noqa: E501
 
         :param create_block_number: The create_block_number of this ResponseWrapperGetNftInfoResult.  # noqa: E501
         :type: int

@@ -56,7 +56,7 @@ class ResponseWrapperListApproveNFT1155ListResponse(object):
     def code(self):
         """Gets the code of this ResponseWrapperListApproveNFT1155ListResponse.  # noqa: E501
 
-        Code 1：Success  # noqa: E501
+        Code 1: Success  # noqa: E501
 
         :return: The code of this ResponseWrapperListApproveNFT1155ListResponse.  # noqa: E501
         :rtype: int
@@ -67,7 +67,7 @@ class ResponseWrapperListApproveNFT1155ListResponse(object):
     def code(self, code):
         """Sets the code of this ResponseWrapperListApproveNFT1155ListResponse.
 
-        Code 1：Success  # noqa: E501
+        Code 1: Success  # noqa: E501
 
         :param code: The code of this ResponseWrapperListApproveNFT1155ListResponse.  # noqa: E501
         :type: int

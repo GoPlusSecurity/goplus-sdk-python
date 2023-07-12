@@ -328,7 +328,7 @@ class ResponseWrapperAddressContractResult(object):
     def data_source(self):
         """Gets the data_source of this ResponseWrapperAddressContractResult.  # noqa: E501
 
-        It describes the data source for this address information. For example：GoPlus/SlowMist  # noqa: E501
+        It describes the data source for this address information. For example: GoPlus/SlowMist  # noqa: E501
 
         :return: The data_source of this ResponseWrapperAddressContractResult.  # noqa: E501
         :rtype: str
@@ -339,7 +339,7 @@ class ResponseWrapperAddressContractResult(object):
     def data_source(self, data_source):
         """Sets the data_source of this ResponseWrapperAddressContractResult.
 
-        It describes the data source for this address information. For example：GoPlus/SlowMist  # noqa: E501
+        It describes the data source for this address information. For example: GoPlus/SlowMist  # noqa: E501
 
         :param data_source: The data_source of this ResponseWrapperAddressContractResult.  # noqa: E501
         :type: str
