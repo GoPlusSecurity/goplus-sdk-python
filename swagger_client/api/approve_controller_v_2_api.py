@@ -33,8 +33,9 @@ class ApproveControllerV2Api(object):
         self.api_client = api_client
 
     def address_nft1155_approve_list_using_get1(self, addresses, chain_id, **kwargs):  # noqa: E501
-        """Check risk of all erc1155 approvals under one EOA.  # noqa: E501
+        """Returns the ERC-1155 approvals of an EOA address and associated risk items.  # noqa: E501
 
+        Reports the outstanding token approvals issued to ERC-1155 contracts by the given EOA address and associated risk items, including the date that the approval was issued, the allowance of the approval, and the transaction ID issuing the allowance.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.address_nft1155_approve_list_using_get1(addresses, chain_id, async_req=True)
@@ -56,8 +57,9 @@ class ApproveControllerV2Api(object):
             return data
 
     def address_nft1155_approve_list_using_get1_with_http_info(self, addresses, chain_id, **kwargs):  # noqa: E501
-        """Check risk of all erc1155 approvals under one EOA.  # noqa: E501
+        """Returns the ERC-1155 approvals of an EOA address and associated risk items.  # noqa: E501
 
+        Reports the outstanding token approvals issued to ERC-1155 contracts by the given EOA address and associated risk items, including the date that the approval was issued, the allowance of the approval, and the transaction ID issuing the allowance.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.address_nft1155_approve_list_using_get1_with_http_info(addresses, chain_id, async_req=True)
@@ -138,8 +140,9 @@ class ApproveControllerV2Api(object):
             collection_formats=collection_formats)
 
     def address_nft721_approve_list_using_get1(self, addresses, chain_id, **kwargs):  # noqa: E501
-        """Check risk of all erc721 approvals under one EOA.  # noqa: E501
+        """Returns the ERC-721 approvals of an EOA address and associated risk items.  # noqa: E501
 
+        Reports the outstanding token approvals issued to ERC-721 contracts by the given EOA address and associated risk items, including the date that the approval was issued, the allowance of the approval, and the transaction ID issuing the allowance.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.address_nft721_approve_list_using_get1(addresses, chain_id, async_req=True)
@@ -161,8 +164,9 @@ class ApproveControllerV2Api(object):
             return data
 
     def address_nft721_approve_list_using_get1_with_http_info(self, addresses, chain_id, **kwargs):  # noqa: E501
-        """Check risk of all erc721 approvals under one EOA.  # noqa: E501
+        """Returns the ERC-721 approvals of an EOA address and associated risk items.  # noqa: E501
 
+        Reports the outstanding token approvals issued to ERC-721 contracts by the given EOA address and associated risk items, including the date that the approval was issued, the allowance of the approval, and the transaction ID issuing the allowance.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.address_nft721_approve_list_using_get1_with_http_info(addresses, chain_id, async_req=True)
@@ -243,8 +247,9 @@ class ApproveControllerV2Api(object):
             collection_formats=collection_formats)
 
     def address_token_approve_list_using_get1(self, addresses, chain_id, **kwargs):  # noqa: E501
-        """Check risk of all erc20 approvals under one EOA.  # noqa: E501
+        """Returns the ERC-20 approvals of an EOA address and associated risk items.  # noqa: E501
 
+        Reports the outstanding token approvals issued to ERC-20 contracts by the given EOA address and associated risk items, including the date that the approval was issued, the allowance of the approval, and the transaction ID issuing the allowance.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.address_token_approve_list_using_get1(addresses, chain_id, async_req=True)
@@ -266,8 +271,9 @@ class ApproveControllerV2Api(object):
             return data
 
     def address_token_approve_list_using_get1_with_http_info(self, addresses, chain_id, **kwargs):  # noqa: E501
-        """Check risk of all erc20 approvals under one EOA.  # noqa: E501
+        """Returns the ERC-20 approvals of an EOA address and associated risk items.  # noqa: E501
 
+        Reports the outstanding token approvals issued to ERC-20 contracts by the given EOA address and associated risk items, including the date that the approval was issued, the allowance of the approval, and the transaction ID issuing the allowance.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.address_token_approve_list_using_get1_with_http_info(addresses, chain_id, async_req=True)
