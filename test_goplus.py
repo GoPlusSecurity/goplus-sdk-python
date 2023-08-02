@@ -17,7 +17,7 @@ from goplus.address import Address
 from goplus.approve import Approve
 from goplus.dapp import Dapp
 from goplus.decode import Decode
-from goplus.errocode import Code
+from goplus.errorcode import Code
 from goplus.nft import Nft
 from goplus.phishing_site import PushingSite
 from goplus.rug_pull import RugPull
