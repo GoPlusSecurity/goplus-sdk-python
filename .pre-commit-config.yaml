@@ -24,7 +24,7 @@ repos:
   rev: 3.9.2
   hooks:
   - id: flake8
-    exclude: '^swagger_client/|errocode.py'
+    exclude: '^swagger_client/'
     args:
       - "--max-line-length=120"
 - repo: https://github.com/PyCQA/isort
