@@ -42,6 +42,7 @@ class ResponseWrapperTokenSecurityResult(object):
         'holder_count': 'str',
         'trust_list': 'str',
         'is_honeypot': 'str',
+        'honeypot_with_same_creator': 'str',
         'holders': 'list[ResponseWrapperTokenSecurityLpHolders]',
         'dex': 'list[ResponseWrapperTokenSecurityDex]',
         'is_open_source': 'str',
@@ -87,6 +88,7 @@ class ResponseWrapperTokenSecurityResult(object):
         'holder_count': 'holder_count',
         'trust_list': 'trust_list',
         'is_honeypot': 'is_honeypot',
+        'honeypot_with_same_creator': 'honeypot_with_same_creator',
         'holders': 'holders',
         'dex': 'dex',
         'is_open_source': 'is_open_source',
@@ -117,7 +119,7 @@ class ResponseWrapperTokenSecurityResult(object):
         'token_symbol': 'token_symbol'
     }
 
-    def __init__(self, note=None, lp_total_supply=None, lp_holders=None, is_airdrop_scam=None, other_potential_risks=None, transfer_pausable=None, trading_cooldown=None, hidden_owner=None, selfdestruct=None, owner_percent=None, is_whitelisted=None, holder_count=None, trust_list=None, is_honeypot=None, holders=None, dex=None, is_open_source=None, sell_tax=None, token_name=None, creator_address=None, creator_percent=None, is_proxy=None, creator_balance=None, is_in_dex=None, owner_balance=None, total_supply=None, is_true_token=None, can_take_back_ownership=None, is_blacklisted=None, owner_address=None, slippage_modifiable=None, buy_tax=None, external_call=None, cannot_sell_all=None, lp_holder_count=None, personal_slippage_modifiable=None, is_anti_whale=None, is_mintable=None, owner_change_balance=None, cannot_buy=None, anti_whale_modifiable=None, token_symbol=None):  # noqa: E501
+    def __init__(self, note=None, lp_total_supply=None, lp_holders=None, is_airdrop_scam=None, other_potential_risks=None, transfer_pausable=None, trading_cooldown=None, hidden_owner=None, selfdestruct=None, owner_percent=None, is_whitelisted=None, holder_count=None, trust_list=None, is_honeypot=None, honeypot_with_same_creator=None, holders=None, dex=None, is_open_source=None, sell_tax=None, token_name=None, creator_address=None, creator_percent=None, is_proxy=None, creator_balance=None, is_in_dex=None, owner_balance=None, total_supply=None, is_true_token=None, can_take_back_ownership=None, is_blacklisted=None, owner_address=None, slippage_modifiable=None, buy_tax=None, external_call=None, cannot_sell_all=None, lp_holder_count=None, personal_slippage_modifiable=None, is_anti_whale=None, is_mintable=None, owner_change_balance=None, cannot_buy=None, anti_whale_modifiable=None, token_symbol=None):  # noqa: E501
         """ResponseWrapperTokenSecurityResult - a model defined in Swagger"""  # noqa: E501
         self._note = None
         self._lp_total_supply = None
@@ -133,6 +135,7 @@ class ResponseWrapperTokenSecurityResult(object):
         self._holder_count = None
         self._trust_list = None
         self._is_honeypot = None
+        self._honeypot_with_same_creator = None
         self._holders = None
         self._dex = None
         self._is_open_source = None
@@ -190,6 +193,8 @@ class ResponseWrapperTokenSecurityResult(object):
             self.trust_list = trust_list
         if is_honeypot is not None:
             self.is_honeypot = is_honeypot
+        if honeypot_with_same_creator is not None:
+            self.honeypot_with_same_creator = honeypot_with_same_creator
         if holders is not None:
             self.holders = holders
         if dex is not None:
@@ -568,6 +573,29 @@ class ResponseWrapperTokenSecurityResult(object):
         """
 
         self._is_honeypot = is_honeypot
+
+    @property
+    def honeypot_with_same_creator(self):
+        """Gets the honeypot_with_same_creator of this ResponseWrapperTokenSecurityResult.  # noqa: E501
+
+        It describes the number of honeypot tokens created by this creator.  # noqa: E501
+
+        :return: The honeypot_with_same_creator of this ResponseWrapperTokenSecurityResult.  # noqa: E501
+        :rtype: str
+        """
+        return self._honeypot_with_same_creator
+
+    @honeypot_with_same_creator.setter
+    def honeypot_with_same_creator(self, honeypot_with_same_creator):
+        """Sets the honeypot_with_same_creator of this ResponseWrapperTokenSecurityResult.
+
+        It describes the number of honeypot tokens created by this creator.  # noqa: E501
+
+        :param honeypot_with_same_creator: The honeypot_with_same_creator of this ResponseWrapperTokenSecurityResult.  # noqa: E501
+        :type: str
+        """
+
+        self._honeypot_with_same_creator = honeypot_with_same_creator
 
     @property
     def holders(self):
