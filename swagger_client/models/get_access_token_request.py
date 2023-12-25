@@ -103,7 +103,7 @@ class GetAccessTokenRequest(object):
     def time(self):
         """Gets the time of this GetAccessTokenRequest.  # noqa: E501
 
-        Quest timestamp (Second)  # noqa: E501
+        Quest timestamp (Second), should be within +-1000s around current timestamp  # noqa: E501
 
         :return: The time of this GetAccessTokenRequest.  # noqa: E501
         :rtype: int
@@ -114,7 +114,7 @@ class GetAccessTokenRequest(object):
     def time(self, time):
         """Sets the time of this GetAccessTokenRequest.
 
-        Quest timestamp (Second)  # noqa: E501
+        Quest timestamp (Second), should be within +-1000s around current timestamp  # noqa: E501
 
         :param time: The time of this GetAccessTokenRequest.  # noqa: E501
         :type: int

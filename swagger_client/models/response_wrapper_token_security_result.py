@@ -43,11 +43,12 @@ class ResponseWrapperTokenSecurityResult(object):
         'trust_list': 'str',
         'is_honeypot': 'str',
         'honeypot_with_same_creator': 'str',
-        'holders': 'list[ResponseWrapperTokenSecurityLpHolders]',
+        'holders': 'list[ResponseWrapperTokenSecurityHolders]',
         'dex': 'list[ResponseWrapperTokenSecurityDex]',
         'is_open_source': 'str',
         'sell_tax': 'str',
         'token_name': 'str',
+        'fake_token': 'ResponseWrapperTokenSecurityFakeToken',
         'creator_address': 'str',
         'creator_percent': 'str',
         'is_proxy': 'str',
@@ -94,6 +95,7 @@ class ResponseWrapperTokenSecurityResult(object):
         'is_open_source': 'is_open_source',
         'sell_tax': 'sell_tax',
         'token_name': 'token_name',
+        'fake_token': 'fake_token',
         'creator_address': 'creator_address',
         'creator_percent': 'creator_percent',
         'is_proxy': 'is_proxy',
@@ -119,7 +121,7 @@ class ResponseWrapperTokenSecurityResult(object):
         'token_symbol': 'token_symbol'
     }
 
-    def __init__(self, note=None, lp_total_supply=None, lp_holders=None, is_airdrop_scam=None, other_potential_risks=None, transfer_pausable=None, trading_cooldown=None, hidden_owner=None, selfdestruct=None, owner_percent=None, is_whitelisted=None, holder_count=None, trust_list=None, is_honeypot=None, honeypot_with_same_creator=None, holders=None, dex=None, is_open_source=None, sell_tax=None, token_name=None, creator_address=None, creator_percent=None, is_proxy=None, creator_balance=None, is_in_dex=None, owner_balance=None, total_supply=None, is_true_token=None, can_take_back_ownership=None, is_blacklisted=None, owner_address=None, slippage_modifiable=None, buy_tax=None, external_call=None, cannot_sell_all=None, lp_holder_count=None, personal_slippage_modifiable=None, is_anti_whale=None, is_mintable=None, owner_change_balance=None, cannot_buy=None, anti_whale_modifiable=None, token_symbol=None):  # noqa: E501
+    def __init__(self, note=None, lp_total_supply=None, lp_holders=None, is_airdrop_scam=None, other_potential_risks=None, transfer_pausable=None, trading_cooldown=None, hidden_owner=None, selfdestruct=None, owner_percent=None, is_whitelisted=None, holder_count=None, trust_list=None, is_honeypot=None, honeypot_with_same_creator=None, holders=None, dex=None, is_open_source=None, sell_tax=None, token_name=None, fake_token=None, creator_address=None, creator_percent=None, is_proxy=None, creator_balance=None, is_in_dex=None, owner_balance=None, total_supply=None, is_true_token=None, can_take_back_ownership=None, is_blacklisted=None, owner_address=None, slippage_modifiable=None, buy_tax=None, external_call=None, cannot_sell_all=None, lp_holder_count=None, personal_slippage_modifiable=None, is_anti_whale=None, is_mintable=None, owner_change_balance=None, cannot_buy=None, anti_whale_modifiable=None, token_symbol=None):  # noqa: E501
         """ResponseWrapperTokenSecurityResult - a model defined in Swagger"""  # noqa: E501
         self._note = None
         self._lp_total_supply = None
@@ -141,6 +143,7 @@ class ResponseWrapperTokenSecurityResult(object):
         self._is_open_source = None
         self._sell_tax = None
         self._token_name = None
+        self._fake_token = None
         self._creator_address = None
         self._creator_percent = None
         self._is_proxy = None
@@ -205,6 +208,8 @@ class ResponseWrapperTokenSecurityResult(object):
             self.sell_tax = sell_tax
         if token_name is not None:
             self.token_name = token_name
+        if fake_token is not None:
+            self.fake_token = fake_token
         if creator_address is not None:
             self.creator_address = creator_address
         if creator_percent is not None:
@@ -604,7 +609,7 @@ class ResponseWrapperTokenSecurityResult(object):
         Top10 holders info  # noqa: E501
 
         :return: The holders of this ResponseWrapperTokenSecurityResult.  # noqa: E501
-        :rtype: list[ResponseWrapperTokenSecurityLpHolders]
+        :rtype: list[ResponseWrapperTokenSecurityHolders]
         """
         return self._holders
 
@@ -615,7 +620,7 @@ class ResponseWrapperTokenSecurityResult(object):
         Top10 holders info  # noqa: E501
 
         :param holders: The holders of this ResponseWrapperTokenSecurityResult.  # noqa: E501
-        :type: list[ResponseWrapperTokenSecurityLpHolders]
+        :type: list[ResponseWrapperTokenSecurityHolders]
         """
 
         self._holders = holders
@@ -711,6 +716,27 @@ class ResponseWrapperTokenSecurityResult(object):
         """
 
         self._token_name = token_name
+
+    @property
+    def fake_token(self):
+        """Gets the fake_token of this ResponseWrapperTokenSecurityResult.  # noqa: E501
+
+
+        :return: The fake_token of this ResponseWrapperTokenSecurityResult.  # noqa: E501
+        :rtype: ResponseWrapperTokenSecurityFakeToken
+        """
+        return self._fake_token
+
+    @fake_token.setter
+    def fake_token(self, fake_token):
+        """Sets the fake_token of this ResponseWrapperTokenSecurityResult.
+
+
+        :param fake_token: The fake_token of this ResponseWrapperTokenSecurityResult.  # noqa: E501
+        :type: ResponseWrapperTokenSecurityFakeToken
+        """
+
+        self._fake_token = fake_token
 
     @property
     def creator_address(self):
