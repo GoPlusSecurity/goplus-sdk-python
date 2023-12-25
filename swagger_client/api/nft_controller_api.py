@@ -41,7 +41,7 @@ class NftControllerApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str chain_id: Chain id, (eth: 1, bsc: 56, Polygon: 137, Avalanche: 43114) (required)
+        :param str chain_id: The chain_id of the blockchain.\"1\" means Ethereum; \"10\" means Optimism;\"25\" means Cronos;\"56\" means BSC;  \"100\" means Gnosis;\"128\" means HECO; \"137\" means Polygon; \"250\" means Fantom;\"321\" means KCC;\"324\" means zkSync Era; \"201022\" means FON;\"42161\" means Arbitrum; \"43114\" means Avalanche;\"59144\" means Linea Mainnet;\"8453\" Base;\"5000\" Mantle; (required)
         :param str contract_addresses: NFT contract address (required)
         :param str authorization: Authorization (test: Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
         :param str token_id: tokenId
@@ -65,7 +65,7 @@ class NftControllerApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str chain_id: Chain id, (eth: 1, bsc: 56, Polygon: 137, Avalanche: 43114) (required)
+        :param str chain_id: The chain_id of the blockchain.\"1\" means Ethereum; \"10\" means Optimism;\"25\" means Cronos;\"56\" means BSC;  \"100\" means Gnosis;\"128\" means HECO; \"137\" means Polygon; \"250\" means Fantom;\"321\" means KCC;\"324\" means zkSync Era; \"201022\" means FON;\"42161\" means Arbitrum; \"43114\" means Avalanche;\"59144\" means Linea Mainnet;\"8453\" Base;\"5000\" Mantle; (required)
         :param str contract_addresses: NFT contract address (required)
         :param str authorization: Authorization (test: Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
         :param str token_id: tokenId
