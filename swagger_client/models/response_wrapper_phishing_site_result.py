@@ -28,7 +28,7 @@ class ResponseWrapperPhishingSiteResult(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'website_contract_security': 'list[str]',
+        'website_contract_security': 'list[ResponseWrapperPhishingSiteResultWebsiteContractSecurity]',
         'phishing_site': 'int'
     }
 
@@ -53,7 +53,7 @@ class ResponseWrapperPhishingSiteResult(object):
 
 
         :return: The website_contract_security of this ResponseWrapperPhishingSiteResult.  # noqa: E501
-        :rtype: list[str]
+        :rtype: list[ResponseWrapperPhishingSiteResultWebsiteContractSecurity]
         """
         return self._website_contract_security
 
@@ -63,7 +63,7 @@ class ResponseWrapperPhishingSiteResult(object):
 
 
         :param website_contract_security: The website_contract_security of this ResponseWrapperPhishingSiteResult.  # noqa: E501
-        :type: list[str]
+        :type: list[ResponseWrapperPhishingSiteResultWebsiteContractSecurity]
         """
 
         self._website_contract_security = website_contract_security
