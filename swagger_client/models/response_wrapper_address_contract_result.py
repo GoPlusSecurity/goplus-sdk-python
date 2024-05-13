@@ -31,18 +31,22 @@ class ResponseWrapperAddressContractResult(object):
         'cybercrime': 'str',
         'money_laundering': 'str',
         'number_of_malicious_contracts_created': 'str',
+        'gas_abuse': 'str',
         'financial_crime': 'str',
         'darkweb_transactions': 'str',
+        'reinit': 'str',
         'phishing_activities': 'str',
         'contract_address': 'str',
         'fake_kyc': 'str',
         'blacklist_doubt': 'str',
         'data_source': 'str',
+        'fake_standard_interface': 'str',
         'stealing_attack': 'str',
         'blackmail_activities': 'str',
         'sanctioned': 'str',
         'malicious_mining_activities': 'str',
         'mixer': 'str',
+        'fake_token': 'str',
         'honeypot_related_address': 'str'
     }
 
@@ -50,38 +54,46 @@ class ResponseWrapperAddressContractResult(object):
         'cybercrime': 'cybercrime',
         'money_laundering': 'money_laundering',
         'number_of_malicious_contracts_created': 'number_of_malicious_contracts_created',
+        'gas_abuse': 'gas_abuse',
         'financial_crime': 'financial_crime',
         'darkweb_transactions': 'darkweb_transactions',
+        'reinit': 'reinit',
         'phishing_activities': 'phishing_activities',
         'contract_address': 'contract_address',
         'fake_kyc': 'fake_kyc',
         'blacklist_doubt': 'blacklist_doubt',
         'data_source': 'data_source',
+        'fake_standard_interface': 'fake_standard_interface',
         'stealing_attack': 'stealing_attack',
         'blackmail_activities': 'blackmail_activities',
         'sanctioned': 'sanctioned',
         'malicious_mining_activities': 'malicious_mining_activities',
         'mixer': 'mixer',
+        'fake_token': 'fake_token',
         'honeypot_related_address': 'honeypot_related_address'
     }
 
-    def __init__(self, cybercrime=None, money_laundering=None, number_of_malicious_contracts_created=None, financial_crime=None, darkweb_transactions=None, phishing_activities=None, contract_address=None, fake_kyc=None, blacklist_doubt=None, data_source=None, stealing_attack=None, blackmail_activities=None, sanctioned=None, malicious_mining_activities=None, mixer=None, honeypot_related_address=None):  # noqa: E501
+    def __init__(self, cybercrime=None, money_laundering=None, number_of_malicious_contracts_created=None, gas_abuse=None, financial_crime=None, darkweb_transactions=None, reinit=None, phishing_activities=None, contract_address=None, fake_kyc=None, blacklist_doubt=None, data_source=None, fake_standard_interface=None, stealing_attack=None, blackmail_activities=None, sanctioned=None, malicious_mining_activities=None, mixer=None, fake_token=None, honeypot_related_address=None):  # noqa: E501
         """ResponseWrapperAddressContractResult - a model defined in Swagger"""  # noqa: E501
         self._cybercrime = None
         self._money_laundering = None
         self._number_of_malicious_contracts_created = None
+        self._gas_abuse = None
         self._financial_crime = None
         self._darkweb_transactions = None
+        self._reinit = None
         self._phishing_activities = None
         self._contract_address = None
         self._fake_kyc = None
         self._blacklist_doubt = None
         self._data_source = None
+        self._fake_standard_interface = None
         self._stealing_attack = None
         self._blackmail_activities = None
         self._sanctioned = None
         self._malicious_mining_activities = None
         self._mixer = None
+        self._fake_token = None
         self._honeypot_related_address = None
         self.discriminator = None
         if cybercrime is not None:
@@ -90,10 +102,14 @@ class ResponseWrapperAddressContractResult(object):
             self.money_laundering = money_laundering
         if number_of_malicious_contracts_created is not None:
             self.number_of_malicious_contracts_created = number_of_malicious_contracts_created
+        if gas_abuse is not None:
+            self.gas_abuse = gas_abuse
         if financial_crime is not None:
             self.financial_crime = financial_crime
         if darkweb_transactions is not None:
             self.darkweb_transactions = darkweb_transactions
+        if reinit is not None:
+            self.reinit = reinit
         if phishing_activities is not None:
             self.phishing_activities = phishing_activities
         if contract_address is not None:
@@ -104,6 +120,8 @@ class ResponseWrapperAddressContractResult(object):
             self.blacklist_doubt = blacklist_doubt
         if data_source is not None:
             self.data_source = data_source
+        if fake_standard_interface is not None:
+            self.fake_standard_interface = fake_standard_interface
         if stealing_attack is not None:
             self.stealing_attack = stealing_attack
         if blackmail_activities is not None:
@@ -114,6 +132,8 @@ class ResponseWrapperAddressContractResult(object):
             self.malicious_mining_activities = malicious_mining_activities
         if mixer is not None:
             self.mixer = mixer
+        if fake_token is not None:
+            self.fake_token = fake_token
         if honeypot_related_address is not None:
             self.honeypot_related_address = honeypot_related_address
 
@@ -187,6 +207,29 @@ class ResponseWrapperAddressContractResult(object):
         self._number_of_malicious_contracts_created = number_of_malicious_contracts_created
 
     @property
+    def gas_abuse(self):
+        """Gets the gas_abuse of this ResponseWrapperAddressContractResult.  # noqa: E501
+
+        It describes whether this address is cheating other user's gas fee to mint other assets.(Notice:Any interaction with such addresses may result in loss of property.)  # noqa: E501
+
+        :return: The gas_abuse of this ResponseWrapperAddressContractResult.  # noqa: E501
+        :rtype: str
+        """
+        return self._gas_abuse
+
+    @gas_abuse.setter
+    def gas_abuse(self, gas_abuse):
+        """Sets the gas_abuse of this ResponseWrapperAddressContractResult.
+
+        It describes whether this address is cheating other user's gas fee to mint other assets.(Notice:Any interaction with such addresses may result in loss of property.)  # noqa: E501
+
+        :param gas_abuse: The gas_abuse of this ResponseWrapperAddressContractResult.  # noqa: E501
+        :type: str
+        """
+
+        self._gas_abuse = gas_abuse
+
+    @property
     def financial_crime(self):
         """Gets the financial_crime of this ResponseWrapperAddressContractResult.  # noqa: E501
 
@@ -231,6 +274,29 @@ class ResponseWrapperAddressContractResult(object):
         """
 
         self._darkweb_transactions = darkweb_transactions
+
+    @property
+    def reinit(self):
+        """Gets the reinit of this ResponseWrapperAddressContractResult.  # noqa: E501
+
+        It describes whether this address/contract has been deployed more than onces, and can be deployed again.(Notice:If a contract can be reinited, the developer can change the contract code whenever he wants.)  # noqa: E501
+
+        :return: The reinit of this ResponseWrapperAddressContractResult.  # noqa: E501
+        :rtype: str
+        """
+        return self._reinit
+
+    @reinit.setter
+    def reinit(self, reinit):
+        """Sets the reinit of this ResponseWrapperAddressContractResult.
+
+        It describes whether this address/contract has been deployed more than onces, and can be deployed again.(Notice:If a contract can be reinited, the developer can change the contract code whenever he wants.)  # noqa: E501
+
+        :param reinit: The reinit of this ResponseWrapperAddressContractResult.  # noqa: E501
+        :type: str
+        """
+
+        self._reinit = reinit
 
     @property
     def phishing_activities(self):
@@ -348,6 +414,29 @@ class ResponseWrapperAddressContractResult(object):
         self._data_source = data_source
 
     @property
+    def fake_standard_interface(self):
+        """Gets the fake_standard_interface of this ResponseWrapperAddressContractResult.  # noqa: E501
+
+        It describes whether this contract contains standard interfaces that do not conform the requirements of the standard protocol.(Notice:Fake Standard Interface is mostly seen in scam assets.)  # noqa: E501
+
+        :return: The fake_standard_interface of this ResponseWrapperAddressContractResult.  # noqa: E501
+        :rtype: str
+        """
+        return self._fake_standard_interface
+
+    @fake_standard_interface.setter
+    def fake_standard_interface(self, fake_standard_interface):
+        """Sets the fake_standard_interface of this ResponseWrapperAddressContractResult.
+
+        It describes whether this contract contains standard interfaces that do not conform the requirements of the standard protocol.(Notice:Fake Standard Interface is mostly seen in scam assets.)  # noqa: E501
+
+        :param fake_standard_interface: The fake_standard_interface of this ResponseWrapperAddressContractResult.  # noqa: E501
+        :type: str
+        """
+
+        self._fake_standard_interface = fake_standard_interface
+
+    @property
     def stealing_attack(self):
         """Gets the stealing_attack of this ResponseWrapperAddressContractResult.  # noqa: E501
 
@@ -461,6 +550,29 @@ class ResponseWrapperAddressContractResult(object):
         """
 
         self._mixer = mixer
+
+    @property
+    def fake_token(self):
+        """Gets the fake_token of this ResponseWrapperAddressContractResult.  # noqa: E501
+
+        It indicates whether the token is a counterfeit of a mainstream asset.  # noqa: E501
+
+        :return: The fake_token of this ResponseWrapperAddressContractResult.  # noqa: E501
+        :rtype: str
+        """
+        return self._fake_token
+
+    @fake_token.setter
+    def fake_token(self, fake_token):
+        """Sets the fake_token of this ResponseWrapperAddressContractResult.
+
+        It indicates whether the token is a counterfeit of a mainstream asset.  # noqa: E501
+
+        :param fake_token: The fake_token of this ResponseWrapperAddressContractResult.  # noqa: E501
+        :type: str
+        """
+
+        self._fake_token = fake_token
 
     @property
     def honeypot_related_address(self):
