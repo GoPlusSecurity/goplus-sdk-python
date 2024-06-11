@@ -134,7 +134,7 @@ class TokenControllerV1Api(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str chain_id: The chain_id of the blockchain. \"1\" means Ethereum;  \"10\" means Optimism; \"25\" means Cronos; \"56\" means BSC;  \"66\" means OKC; \"100\" means Gnosis; \"128\" means HECO;  \"137\" means Polygon;  \"250\" means Fantom; \"321\" means KCC; \"324\" means zkSync Era; \"10001\" means ETHW; \"201022\" means FON; \"42161\" means Arbitrum;  \"43114\" means Avalanche; \"59144\" means Linea Mainnet; \"8453\" Base; \"tron\" means Tron; \"534352\" means Scroll; \"204\" means opBNB; (required)
+        :param str chain_id: The chain_id of the blockchain. \"1\" means Ethereum;  \"10\" means Optimism; \"25\" means Cronos; \"56\" means BSC;  \"100\" means Gnosis; \"128\" means HECO;  \"137\" means Polygon;  \"250\" means Fantom; \"321\" means KCC; \"324\" means zkSync Era; \"10001\" means ETHW; \"201022\" means FON; \"42161\" means Arbitrum;  \"43114\" means Avalanche; \"59144\" means Linea Mainnet; \"8453\" Base; \"tron\" means Tron; \"534352\" means Scroll; \"204\" means opBNB; \"5000\" means Mantle; \"42766\" means ZKFair; \"81457\" means Blast; \"169\" means Manta Pacific; \"80085\" means Berachain Artio Testnet; \"4200\" means Merlin; \"200901\" means Bitlayer Mainnet; \"810180\" means zkLink Nova; \"196\" means X Layer Mainnet;  (required)
         :param str contract_addresses: The contract address of tokens. (required)
         :param str authorization: Authorization (test: Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
         :return: ResponseWrapperTokenSecurity
@@ -157,7 +157,7 @@ class TokenControllerV1Api(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str chain_id: The chain_id of the blockchain. \"1\" means Ethereum;  \"10\" means Optimism; \"25\" means Cronos; \"56\" means BSC;  \"66\" means OKC; \"100\" means Gnosis; \"128\" means HECO;  \"137\" means Polygon;  \"250\" means Fantom; \"321\" means KCC; \"324\" means zkSync Era; \"10001\" means ETHW; \"201022\" means FON; \"42161\" means Arbitrum;  \"43114\" means Avalanche; \"59144\" means Linea Mainnet; \"8453\" Base; \"tron\" means Tron; \"534352\" means Scroll; \"204\" means opBNB; (required)
+        :param str chain_id: The chain_id of the blockchain. \"1\" means Ethereum;  \"10\" means Optimism; \"25\" means Cronos; \"56\" means BSC;  \"100\" means Gnosis; \"128\" means HECO;  \"137\" means Polygon;  \"250\" means Fantom; \"321\" means KCC; \"324\" means zkSync Era; \"10001\" means ETHW; \"201022\" means FON; \"42161\" means Arbitrum;  \"43114\" means Avalanche; \"59144\" means Linea Mainnet; \"8453\" Base; \"tron\" means Tron; \"534352\" means Scroll; \"204\" means opBNB; \"5000\" means Mantle; \"42766\" means ZKFair; \"81457\" means Blast; \"169\" means Manta Pacific; \"80085\" means Berachain Artio Testnet; \"4200\" means Merlin; \"200901\" means Bitlayer Mainnet; \"810180\" means zkLink Nova; \"196\" means X Layer Mainnet;  (required)
         :param str contract_addresses: The contract address of tokens. (required)
         :param str authorization: Authorization (test: Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
         :return: ResponseWrapperTokenSecurity
