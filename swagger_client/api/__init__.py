@@ -3,11 +3,15 @@ from __future__ import absolute_import
 # flake8: noqa
 
 # import apis into api package
+from swagger_client.api.token_security_api_for_solana__beta_api import TokenSecurityAPIForSolanaBetaApi
+from swagger_client.api.token_security_api_for_sui_api import TokenSecurityAPIForSuiApi
+from swagger_client.api.transaction_simulation_for_solana_api import TransactionSimulationForSolanaApi
 from swagger_client.api.approve_controller_v_1_api import ApproveControllerV1Api
 from swagger_client.api.approve_controller_v_2_api import ApproveControllerV2Api
 from swagger_client.api.contract_abi_controller_api import ContractAbiControllerApi
 from swagger_client.api.dapp_controller_api import DappControllerApi
 from swagger_client.api.defi_controller_api import DefiControllerApi
+from swagger_client.api.lock_controller_api import LockControllerApi
 from swagger_client.api.nft_controller_api import NftControllerApi
 from swagger_client.api.token_controller_api import TokenControllerApi
 from swagger_client.api.token_controller_v_1_api import TokenControllerV1Api
