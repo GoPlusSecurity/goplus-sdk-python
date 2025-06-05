@@ -42,8 +42,8 @@ class ApproveControllerV1Api(object):
 
         :param async_req bool
         :param str address: address (required)
-        :param str authorization: Authorization (test: Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
-        :param str chain_id: The chain_id of the blockchain. \"1\" means Ethereum;  \"10\" means Optimism; \"25\" means Cronos; \"56\" means BSC;  \"66\" means OKC; \"100\" means Gnosis; \"128\" means HECO;  \"137\" means Polygon;  \"250\" means Fantom; \"321\" means KCC; \"324\" means zkSync Era; \"10001\" means ETHW; \"201022\" means FON; \"42161\" means Arbitrum;  \"43114\" means Avalanche; \"59140\" means Linea; \"tron\" means Tron; \"534352\" means Scroll; \"204\" means opBNB; \"solana\" means Solana;  Solana and Tron address are case-sensitive;
+        :param str authorization: Authorization token in the format: Bearer <token> (e.g., Bearer eyJsZXZlbCI6NSwiYXBwTmFtZSI6ImF2cyIsImFwcEtleSI6IjFaW...)
+        :param str chain_id: The chain_id of the blockchain. To check the corresponding blockchain name for a given chain_id, please visit: https://docs.gopluslabs.io/reference/response-details-9
         :return: ResponseWrapperAddressContract
                  If the method is called asynchronously,
                  returns the request thread.
@@ -65,8 +65,8 @@ class ApproveControllerV1Api(object):
 
         :param async_req bool
         :param str address: address (required)
-        :param str authorization: Authorization (test: Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
-        :param str chain_id: The chain_id of the blockchain. \"1\" means Ethereum;  \"10\" means Optimism; \"25\" means Cronos; \"56\" means BSC;  \"66\" means OKC; \"100\" means Gnosis; \"128\" means HECO;  \"137\" means Polygon;  \"250\" means Fantom; \"321\" means KCC; \"324\" means zkSync Era; \"10001\" means ETHW; \"201022\" means FON; \"42161\" means Arbitrum;  \"43114\" means Avalanche; \"59140\" means Linea; \"tron\" means Tron; \"534352\" means Scroll; \"204\" means opBNB; \"solana\" means Solana;  Solana and Tron address are case-sensitive;
+        :param str authorization: Authorization token in the format: Bearer <token> (e.g., Bearer eyJsZXZlbCI6NSwiYXBwTmFtZSI6ImF2cyIsImFwcEtleSI6IjFaW...)
+        :param str chain_id: The chain_id of the blockchain. To check the corresponding blockchain name for a given chain_id, please visit: https://docs.gopluslabs.io/reference/response-details-9
         :return: ResponseWrapperAddressContract
                  If the method is called asynchronously,
                  returns the request thread.
@@ -144,7 +144,7 @@ class ApproveControllerV1Api(object):
         :param async_req bool
         :param str chain_id: Chain id, (ETH: 1,  BSC: 56, OKC: 66, Heco: 128, Polygon: 137, Fantom:250, Arbitrum: 42161, Avalanche: 43114) (required)
         :param str contract_addresses: Contract needs to be detected (required)
-        :param str authorization: Authorization (test: Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
+        :param str authorization: Authorization token in the format: Bearer <token> (e.g., Bearer eyJsZXZlbCI6NSwiYXBwTmFtZSI6ImF2cyIsImFwcEtleSI6IjFaW...)
         :return: ResponseWrapperContractApproveResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -167,7 +167,7 @@ class ApproveControllerV1Api(object):
         :param async_req bool
         :param str chain_id: Chain id, (ETH: 1,  BSC: 56, OKC: 66, Heco: 128, Polygon: 137, Fantom:250, Arbitrum: 42161, Avalanche: 43114) (required)
         :param str contract_addresses: Contract needs to be detected (required)
-        :param str authorization: Authorization (test: Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
+        :param str authorization: Authorization token in the format: Bearer <token> (e.g., Bearer eyJsZXZlbCI6NSwiYXBwTmFtZSI6ImF2cyIsImFwcEtleSI6IjFaW...)
         :return: ResponseWrapperContractApproveResponse
                  If the method is called asynchronously,
                  returns the request thread.

@@ -41,7 +41,7 @@ class DappControllerApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str authorization: Authorization (test: Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
+        :param str authorization: Authorization token in the format: Bearer <token> (e.g., Bearer eyJsZXZlbCI6NSwiYXBwTmFtZSI6ImF2cyIsImFwcEtleSI6IjFaW...)
         :param str url: Url or domain
         :return: ResponseWrapperDappContractSecurityResponse
                  If the method is called asynchronously,
@@ -63,7 +63,7 @@ class DappControllerApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str authorization: Authorization (test: Bearer 81|9ihH8JzEuFu4MQ9DjWmH5WrNCPW...)
+        :param str authorization: Authorization token in the format: Bearer <token> (e.g., Bearer eyJsZXZlbCI6NSwiYXBwTmFtZSI6ImF2cyIsImFwcEtleSI6IjFaW...)
         :param str url: Url or domain
         :return: ResponseWrapperDappContractSecurityResponse
                  If the method is called asynchronously,
