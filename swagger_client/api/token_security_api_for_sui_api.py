@@ -32,45 +32,45 @@ class TokenSecurityAPIForSuiApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def sui_token_security_using_get(self, **kwargs):  # noqa: E501
+    def sui_token_security_using_get(self, contract_addresses, **kwargs):  # noqa: E501
         """Get token's security and risk data.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.sui_token_security_using_get(async_req=True)
+        >>> thread = api.sui_token_security_using_get(contract_addresses, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
+        :param str contract_addresses: The contract address of sui tokens. (required)
         :param str authorization: Authorization token in the format: Bearer <token> (e.g., Bearer eyJsZXZlbCI6NSwiYXBwTmFtZSI6ImF2cyIsImFwcEtleSI6IjFaW...)
-        :param str contract_addresses: contract_addresses
         :return: ResponseWrapperSuiTokenSecurity
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.sui_token_security_using_get_with_http_info(**kwargs)  # noqa: E501
+            return self.sui_token_security_using_get_with_http_info(contract_addresses, **kwargs)  # noqa: E501
         else:
-            (data) = self.sui_token_security_using_get_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.sui_token_security_using_get_with_http_info(contract_addresses, **kwargs)  # noqa: E501
             return data
 
-    def sui_token_security_using_get_with_http_info(self, **kwargs):  # noqa: E501
+    def sui_token_security_using_get_with_http_info(self, contract_addresses, **kwargs):  # noqa: E501
         """Get token's security and risk data.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.sui_token_security_using_get_with_http_info(async_req=True)
+        >>> thread = api.sui_token_security_using_get_with_http_info(contract_addresses, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
+        :param str contract_addresses: The contract address of sui tokens. (required)
         :param str authorization: Authorization token in the format: Bearer <token> (e.g., Bearer eyJsZXZlbCI6NSwiYXBwTmFtZSI6ImF2cyIsImFwcEtleSI6IjFaW...)
-        :param str contract_addresses: contract_addresses
         :return: ResponseWrapperSuiTokenSecurity
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['authorization', 'contract_addresses']  # noqa: E501
+        all_params = ['contract_addresses', 'authorization']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -85,6 +85,10 @@ class TokenSecurityAPIForSuiApi(object):
                 )
             params[key] = val
         del params['kwargs']
+        # verify the required parameter 'contract_addresses' is set
+        if ('contract_addresses' not in params or
+                params['contract_addresses'] is None):
+            raise ValueError("Missing the required parameter `contract_addresses` when calling `sui_token_security_using_get`")  # noqa: E501
 
         collection_formats = {}
 
