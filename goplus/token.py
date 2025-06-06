@@ -13,6 +13,10 @@
 
 from goplus.base import Base
 from swagger_client.api.token_controller_v_1_api import TokenControllerV1Api
+from swagger_client.api.token_security_api_for_solana__beta_api import (
+    TokenSecurityAPIForSolanaBetaApi,
+)
+from swagger_client.api.token_security_api_for_sui_api import TokenSecurityAPIForSuiApi
 
 
 class Token(Base):
@@ -23,6 +27,8 @@ class Token(Base):
     def __init__(self, access_token=None):
         super().__init__(access_token=access_token)
         self.api = TokenControllerV1Api()
+        self.solana_api = TokenSecurityAPIForSolanaBetaApi()
+        self.sui_api = TokenSecurityAPIForSuiApi()
 
     @staticmethod
     def __check(addresses):
@@ -42,4 +48,20 @@ class Token(Base):
             contract_addresses=",".join(addresses),
             **self.authorization,
             **kwargs
+        )
+
+    def solana_token_security(self, addresses: list, **kwargs):
+
+        self.__check(addresses)
+
+        return self.solana_api.solana_token_security_using_get(
+            contract_addresses=",".join(addresses), **self.authorization, **kwargs
+        )
+
+    def sui_token_security(self, addresses: list, **kwargs):
+
+        self.__check(addresses)
+
+        return self.sui_api.sui_token_security_using_get(
+            contract_addresses=",".join(addresses), **self.authorization, **kwargs
         )
