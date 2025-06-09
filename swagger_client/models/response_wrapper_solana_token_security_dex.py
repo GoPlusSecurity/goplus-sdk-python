@@ -37,6 +37,7 @@ class ResponseWrapperSolanaTokenSecurityDex(object):
         'type': 'str',
         'dex_name': 'str',
         'day': 'ResponseWrapperSolanaTokenSecurityDay',
+        'burn_percent': 'float',
         'lp_amount': 'str',
         'fee_rate': 'str'
     }
@@ -51,11 +52,12 @@ class ResponseWrapperSolanaTokenSecurityDex(object):
         'type': 'type',
         'dex_name': 'dex_name',
         'day': 'day',
+        'burn_percent': 'burn_percent',
         'lp_amount': 'lp_amount',
         'fee_rate': 'fee_rate'
     }
 
-    def __init__(self, week=None, month=None, price=None, open_time=None, id=None, tvl=None, type=None, dex_name=None, day=None, lp_amount=None, fee_rate=None):  # noqa: E501
+    def __init__(self, week=None, month=None, price=None, open_time=None, id=None, tvl=None, type=None, dex_name=None, day=None, burn_percent=None, lp_amount=None, fee_rate=None):  # noqa: E501
         """ResponseWrapperSolanaTokenSecurityDex - a model defined in Swagger"""  # noqa: E501
         self._week = None
         self._month = None
@@ -66,6 +68,7 @@ class ResponseWrapperSolanaTokenSecurityDex(object):
         self._type = None
         self._dex_name = None
         self._day = None
+        self._burn_percent = None
         self._lp_amount = None
         self._fee_rate = None
         self.discriminator = None
@@ -87,6 +90,8 @@ class ResponseWrapperSolanaTokenSecurityDex(object):
             self.dex_name = dex_name
         if day is not None:
             self.day = day
+        if burn_percent is not None:
+            self.burn_percent = burn_percent
         if lp_amount is not None:
             self.lp_amount = lp_amount
         if fee_rate is not None:
@@ -292,6 +297,29 @@ class ResponseWrapperSolanaTokenSecurityDex(object):
         """
 
         self._day = day
+
+    @property
+    def burn_percent(self):
+        """Gets the burn_percent of this ResponseWrapperSolanaTokenSecurityDex.  # noqa: E501
+
+        Percentage of burned LP  # noqa: E501
+
+        :return: The burn_percent of this ResponseWrapperSolanaTokenSecurityDex.  # noqa: E501
+        :rtype: float
+        """
+        return self._burn_percent
+
+    @burn_percent.setter
+    def burn_percent(self, burn_percent):
+        """Sets the burn_percent of this ResponseWrapperSolanaTokenSecurityDex.
+
+        Percentage of burned LP  # noqa: E501
+
+        :param burn_percent: The burn_percent of this ResponseWrapperSolanaTokenSecurityDex.  # noqa: E501
+        :type: float
+        """
+
+        self._burn_percent = burn_percent
 
     @property
     def lp_amount(self):
