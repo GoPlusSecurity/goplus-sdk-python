@@ -29,7 +29,7 @@ class ResponseWrapperSolanaTokenSecurityResult(object):
     """
     swagger_types = {
         'metadata': 'ResponseWrapperSolanaTokenSecurityMetadata',
-        'creator': 'list[ResponseWrapperSolanaTokenSecurityCreator]',
+        'creators': 'list[ResponseWrapperSolanaTokenSecurityCreators]',
         'lp_holders': 'list[ResponseWrapperSolanaTokenSecurityLpHolders]',
         'closable': 'ResponseWrapperSolanaTokenSecurityClosable',
         'transfer_hook': 'list[ResponseWrapperSolanaTokenSecurityTransferHook]',
@@ -50,7 +50,7 @@ class ResponseWrapperSolanaTokenSecurityResult(object):
 
     attribute_map = {
         'metadata': 'metadata',
-        'creator': 'creator',
+        'creators': 'creators',
         'lp_holders': 'lp_holders',
         'closable': 'closable',
         'transfer_hook': 'transfer_hook',
@@ -69,10 +69,10 @@ class ResponseWrapperSolanaTokenSecurityResult(object):
         'transfer_fee_upgradable': 'transfer_fee_upgradable'
     }
 
-    def __init__(self, metadata=None, creator=None, lp_holders=None, closable=None, transfer_hook=None, transfer_hook_upgradable=None, trusted_token=None, default_account_state_upgradable=None, none_transferable=None, default_account_state=None, mintable=None, balance_mutable_authority=None, transfer_fee=None, holders=None, freezable=None, metadata_mutable=None, dex=None, transfer_fee_upgradable=None):  # noqa: E501
+    def __init__(self, metadata=None, creators=None, lp_holders=None, closable=None, transfer_hook=None, transfer_hook_upgradable=None, trusted_token=None, default_account_state_upgradable=None, none_transferable=None, default_account_state=None, mintable=None, balance_mutable_authority=None, transfer_fee=None, holders=None, freezable=None, metadata_mutable=None, dex=None, transfer_fee_upgradable=None):  # noqa: E501
         """ResponseWrapperSolanaTokenSecurityResult - a model defined in Swagger"""  # noqa: E501
         self._metadata = None
-        self._creator = None
+        self._creators = None
         self._lp_holders = None
         self._closable = None
         self._transfer_hook = None
@@ -92,8 +92,8 @@ class ResponseWrapperSolanaTokenSecurityResult(object):
         self.discriminator = None
         if metadata is not None:
             self.metadata = metadata
-        if creator is not None:
-            self.creator = creator
+        if creators is not None:
+            self.creators = creators
         if lp_holders is not None:
             self.lp_holders = lp_holders
         if closable is not None:
@@ -149,27 +149,27 @@ class ResponseWrapperSolanaTokenSecurityResult(object):
         self._metadata = metadata
 
     @property
-    def creator(self):
-        """Gets the creator of this ResponseWrapperSolanaTokenSecurityResult.  # noqa: E501
+    def creators(self):
+        """Gets the creators of this ResponseWrapperSolanaTokenSecurityResult.  # noqa: E501
 
         Contains information about the token creators.  # noqa: E501
 
-        :return: The creator of this ResponseWrapperSolanaTokenSecurityResult.  # noqa: E501
-        :rtype: list[ResponseWrapperSolanaTokenSecurityCreator]
+        :return: The creators of this ResponseWrapperSolanaTokenSecurityResult.  # noqa: E501
+        :rtype: list[ResponseWrapperSolanaTokenSecurityCreators]
         """
-        return self._creator
+        return self._creators
 
-    @creator.setter
-    def creator(self, creator):
-        """Sets the creator of this ResponseWrapperSolanaTokenSecurityResult.
+    @creators.setter
+    def creators(self, creators):
+        """Sets the creators of this ResponseWrapperSolanaTokenSecurityResult.
 
         Contains information about the token creators.  # noqa: E501
 
-        :param creator: The creator of this ResponseWrapperSolanaTokenSecurityResult.  # noqa: E501
-        :type: list[ResponseWrapperSolanaTokenSecurityCreator]
+        :param creators: The creators of this ResponseWrapperSolanaTokenSecurityResult.  # noqa: E501
+        :type: list[ResponseWrapperSolanaTokenSecurityCreators]
         """
 
-        self._creator = creator
+        self._creators = creators
 
     @property
     def lp_holders(self):
