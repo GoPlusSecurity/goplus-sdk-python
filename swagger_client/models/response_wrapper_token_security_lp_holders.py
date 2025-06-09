@@ -33,7 +33,7 @@ class ResponseWrapperTokenSecurityLpHolders(object):
         'address': 'str',
         'balance': 'str',
         'nft_list': 'list[ResponseWrapperTokenSecurityNFTList]',
-        'locked_detail': 'list[ResponseWrapperTokenSecurityLockedDetail]',
+        'locked_detail': 'list[ResponseWrapperSolanaTokenSecurityLockedDetail]',
         'tag': 'str',
         'percent': 'str'
     }
@@ -199,7 +199,7 @@ class ResponseWrapperTokenSecurityLpHolders(object):
         It is an array, decribes lock position info of this holder, only shows when \"locked\": 1. This Array may contain multiple objects for multiple locking info. (Notice:When \"locked\":0, or lock address is a black hole address,  \"locked_detail\" will be no return.)  # noqa: E501
 
         :return: The locked_detail of this ResponseWrapperTokenSecurityLpHolders.  # noqa: E501
-        :rtype: list[ResponseWrapperTokenSecurityLockedDetail]
+        :rtype: list[ResponseWrapperSolanaTokenSecurityLockedDetail]
         """
         return self._locked_detail
 
@@ -210,7 +210,7 @@ class ResponseWrapperTokenSecurityLpHolders(object):
         It is an array, decribes lock position info of this holder, only shows when \"locked\": 1. This Array may contain multiple objects for multiple locking info. (Notice:When \"locked\":0, or lock address is a black hole address,  \"locked_detail\" will be no return.)  # noqa: E501
 
         :param locked_detail: The locked_detail of this ResponseWrapperTokenSecurityLpHolders.  # noqa: E501
-        :type: list[ResponseWrapperTokenSecurityLockedDetail]
+        :type: list[ResponseWrapperSolanaTokenSecurityLockedDetail]
         """
 
         self._locked_detail = locked_detail

@@ -34,14 +34,14 @@ class ResponseWrapperSolanaTokenSecurityResult(object):
         'closable': 'ResponseWrapperSolanaTokenSecurityClosable',
         'transfer_hook': 'list[ResponseWrapperSolanaTokenSecurityTransferHook]',
         'transfer_hook_upgradable': 'ResponseWrapperSolanaTokenSecurityTransferHookUpgradable',
-        'trusted_token': 'str',
+        'trusted_token': 'int',
         'default_account_state_upgradable': 'ResponseWrapperSolanaTokenSecurityDefaultAccountStateUpgradable',
         'none_transferable': 'str',
         'default_account_state': 'str',
         'mintable': 'ResponseWrapperSolanaTokenSecurityMintable',
         'balance_mutable_authority': 'ResponseWrapperSolanaTokenSecurityBalanceMutableAuthority',
         'transfer_fee': 'ResponseWrapperSolanaTokenSecurityTransferFee',
-        'holders': 'list[ResponseWrapperSolanaTokenSecurityLpHolders]',
+        'holders': 'list[ResponseWrapperSolanaTokenSecurityHolders]',
         'freezable': 'ResponseWrapperSolanaTokenSecurityFreezable',
         'metadata_mutable': 'ResponseWrapperSolanaTokenSecurityMetadataMutable',
         'dex': 'list[ResponseWrapperSolanaTokenSecurityDex]',
@@ -266,7 +266,7 @@ class ResponseWrapperSolanaTokenSecurityResult(object):
         If the token is a famous and trustworthy one. \"1\" means yes.  # noqa: E501
 
         :return: The trusted_token of this ResponseWrapperSolanaTokenSecurityResult.  # noqa: E501
-        :rtype: str
+        :rtype: int
         """
         return self._trusted_token
 
@@ -277,7 +277,7 @@ class ResponseWrapperSolanaTokenSecurityResult(object):
         If the token is a famous and trustworthy one. \"1\" means yes.  # noqa: E501
 
         :param trusted_token: The trusted_token of this ResponseWrapperSolanaTokenSecurityResult.  # noqa: E501
-        :type: str
+        :type: int
         """
 
         self._trusted_token = trusted_token
@@ -419,7 +419,7 @@ class ResponseWrapperSolanaTokenSecurityResult(object):
         List of top 10 addresses holding the token and their balances.  # noqa: E501
 
         :return: The holders of this ResponseWrapperSolanaTokenSecurityResult.  # noqa: E501
-        :rtype: list[ResponseWrapperSolanaTokenSecurityLpHolders]
+        :rtype: list[ResponseWrapperSolanaTokenSecurityHolders]
         """
         return self._holders
 
@@ -430,7 +430,7 @@ class ResponseWrapperSolanaTokenSecurityResult(object):
         List of top 10 addresses holding the token and their balances.  # noqa: E501
 
         :param holders: The holders of this ResponseWrapperSolanaTokenSecurityResult.  # noqa: E501
-        :type: list[ResponseWrapperSolanaTokenSecurityLpHolders]
+        :type: list[ResponseWrapperSolanaTokenSecurityHolders]
         """
 
         self._holders = holders
