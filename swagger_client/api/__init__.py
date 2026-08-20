@@ -13,6 +13,9 @@ from swagger_client.api.dapp_controller_api import DappControllerApi
 from swagger_client.api.defi_controller_api import DefiControllerApi
 from swagger_client.api.lock_controller_api import LockControllerApi
 from swagger_client.api.nft_controller_api import NftControllerApi
+from swagger_client.api.public_controller_api import PublicControllerApi
+from swagger_client.api.sec_ware_open_controller_api import SecWareOpenControllerApi
 from swagger_client.api.token_controller_api import TokenControllerApi
 from swagger_client.api.token_controller_v_1_api import TokenControllerV1Api
+from swagger_client.api.transaction_security_controller_api import TransactionSecurityControllerApi
 from swagger_client.api.website_controller_api import WebsiteControllerApi
