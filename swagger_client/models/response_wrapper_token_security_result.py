@@ -28,6 +28,7 @@ class ResponseWrapperTokenSecurityResult(object):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'b20_token': 'ResponseWrapperTokenSecurityB20Token',
         'note': 'str',
         'lp_total_supply': 'str',
         'lp_holders': 'list[ResponseWrapperTokenSecurityLpHolders]',
@@ -75,6 +76,7 @@ class ResponseWrapperTokenSecurityResult(object):
     }
 
     attribute_map = {
+        'b20_token': 'b20_token',
         'note': 'note',
         'lp_total_supply': 'lp_total_supply',
         'lp_holders': 'lp_holders',
@@ -121,8 +123,9 @@ class ResponseWrapperTokenSecurityResult(object):
         'token_symbol': 'token_symbol'
     }
 
-    def __init__(self, note=None, lp_total_supply=None, lp_holders=None, is_airdrop_scam=None, other_potential_risks=None, transfer_pausable=None, trading_cooldown=None, hidden_owner=None, selfdestruct=None, owner_percent=None, is_whitelisted=None, holder_count=None, trust_list=None, is_honeypot=None, honeypot_with_same_creator=None, holders=None, dex=None, is_open_source=None, sell_tax=None, token_name=None, fake_token=None, creator_address=None, creator_percent=None, is_proxy=None, creator_balance=None, is_in_dex=None, owner_balance=None, total_supply=None, is_true_token=None, can_take_back_ownership=None, is_blacklisted=None, owner_address=None, slippage_modifiable=None, buy_tax=None, external_call=None, cannot_sell_all=None, lp_holder_count=None, personal_slippage_modifiable=None, is_anti_whale=None, is_mintable=None, owner_change_balance=None, cannot_buy=None, anti_whale_modifiable=None, token_symbol=None):  # noqa: E501
+    def __init__(self, b20_token=None, note=None, lp_total_supply=None, lp_holders=None, is_airdrop_scam=None, other_potential_risks=None, transfer_pausable=None, trading_cooldown=None, hidden_owner=None, selfdestruct=None, owner_percent=None, is_whitelisted=None, holder_count=None, trust_list=None, is_honeypot=None, honeypot_with_same_creator=None, holders=None, dex=None, is_open_source=None, sell_tax=None, token_name=None, fake_token=None, creator_address=None, creator_percent=None, is_proxy=None, creator_balance=None, is_in_dex=None, owner_balance=None, total_supply=None, is_true_token=None, can_take_back_ownership=None, is_blacklisted=None, owner_address=None, slippage_modifiable=None, buy_tax=None, external_call=None, cannot_sell_all=None, lp_holder_count=None, personal_slippage_modifiable=None, is_anti_whale=None, is_mintable=None, owner_change_balance=None, cannot_buy=None, anti_whale_modifiable=None, token_symbol=None):  # noqa: E501
         """ResponseWrapperTokenSecurityResult - a model defined in Swagger"""  # noqa: E501
+        self._b20_token = None
         self._note = None
         self._lp_total_supply = None
         self._lp_holders = None
@@ -168,6 +171,8 @@ class ResponseWrapperTokenSecurityResult(object):
         self._anti_whale_modifiable = None
         self._token_symbol = None
         self.discriminator = None
+        if b20_token is not None:
+            self.b20_token = b20_token
         if note is not None:
             self.note = note
         if lp_total_supply is not None:
@@ -256,6 +261,27 @@ class ResponseWrapperTokenSecurityResult(object):
             self.anti_whale_modifiable = anti_whale_modifiable
         if token_symbol is not None:
             self.token_symbol = token_symbol
+
+    @property
+    def b20_token(self):
+        """Gets the b20_token of this ResponseWrapperTokenSecurityResult.  # noqa: E501
+
+
+        :return: The b20_token of this ResponseWrapperTokenSecurityResult.  # noqa: E501
+        :rtype: ResponseWrapperTokenSecurityB20Token
+        """
+        return self._b20_token
+
+    @b20_token.setter
+    def b20_token(self, b20_token):
+        """Sets the b20_token of this ResponseWrapperTokenSecurityResult.
+
+
+        :param b20_token: The b20_token of this ResponseWrapperTokenSecurityResult.  # noqa: E501
+        :type: ResponseWrapperTokenSecurityB20Token
+        """
+
+        self._b20_token = b20_token
 
     @property
     def note(self):

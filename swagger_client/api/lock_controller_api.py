@@ -32,6 +32,107 @@ class LockControllerApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
+    def get_nft_locker_lock_infos_list_using_get(self, page_num, page_size, **kwargs):  # noqa: E501
+        """get lpv3 locker infos  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_nft_locker_lock_infos_list_using_get(page_num, page_size, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param int page_num: pageNum (required)
+        :param int page_size: pageSize (required)
+        :return: ResponseWrapperPageResponseTaNftLockerLockInfo
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.get_nft_locker_lock_infos_list_using_get_with_http_info(page_num, page_size, **kwargs)  # noqa: E501
+        else:
+            (data) = self.get_nft_locker_lock_infos_list_using_get_with_http_info(page_num, page_size, **kwargs)  # noqa: E501
+            return data
+
+    def get_nft_locker_lock_infos_list_using_get_with_http_info(self, page_num, page_size, **kwargs):  # noqa: E501
+        """get lpv3 locker infos  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_nft_locker_lock_infos_list_using_get_with_http_info(page_num, page_size, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param int page_num: pageNum (required)
+        :param int page_size: pageSize (required)
+        :return: ResponseWrapperPageResponseTaNftLockerLockInfo
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['page_num', 'page_size']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_nft_locker_lock_infos_list_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'page_num' is set
+        if ('page_num' not in params or
+                params['page_num'] is None):
+            raise ValueError("Missing the required parameter `page_num` when calling `get_nft_locker_lock_infos_list_using_get`")  # noqa: E501
+        # verify the required parameter 'page_size' is set
+        if ('page_size' not in params or
+                params['page_size'] is None):
+            raise ValueError("Missing the required parameter `page_size` when calling `get_nft_locker_lock_infos_list_using_get`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'page_num' in params:
+            query_params.append(('pageNum', params['page_num']))  # noqa: E501
+        if 'page_size' in params:
+            query_params.append(('pageSize', params['page_size']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['*/*'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = []  # noqa: E501
+
+        return self.api_client.call_api(
+            '/open/api/v1/locks/lpv3s', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseWrapperPageResponseTaNftLockerLockInfo',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
     def get_nft_lockers_using_get(self, chain_id, page_num, page_size, pool_address, **kwargs):  # noqa: E501
         """Get lpv3 locker info  # noqa: E501
 
@@ -267,6 +368,224 @@ class LockControllerApi(object):
             post_params=form_params,
             files=local_var_files,
             response_type='ResponseWrapperTokenLockerResponse',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def get_v4_nft_locker_lock_infos_list_using_get(self, page_num, page_size, **kwargs):  # noqa: E501
+        """get lpv4 locker infos  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_v4_nft_locker_lock_infos_list_using_get(page_num, page_size, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param int page_num: pageNum (required)
+        :param int page_size: pageSize (required)
+        :return: ResponseWrapperPageResponseV4NftLockerLockInfos
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.get_v4_nft_locker_lock_infos_list_using_get_with_http_info(page_num, page_size, **kwargs)  # noqa: E501
+        else:
+            (data) = self.get_v4_nft_locker_lock_infos_list_using_get_with_http_info(page_num, page_size, **kwargs)  # noqa: E501
+            return data
+
+    def get_v4_nft_locker_lock_infos_list_using_get_with_http_info(self, page_num, page_size, **kwargs):  # noqa: E501
+        """get lpv4 locker infos  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_v4_nft_locker_lock_infos_list_using_get_with_http_info(page_num, page_size, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param int page_num: pageNum (required)
+        :param int page_size: pageSize (required)
+        :return: ResponseWrapperPageResponseV4NftLockerLockInfos
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['page_num', 'page_size']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_v4_nft_locker_lock_infos_list_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'page_num' is set
+        if ('page_num' not in params or
+                params['page_num'] is None):
+            raise ValueError("Missing the required parameter `page_num` when calling `get_v4_nft_locker_lock_infos_list_using_get`")  # noqa: E501
+        # verify the required parameter 'page_size' is set
+        if ('page_size' not in params or
+                params['page_size'] is None):
+            raise ValueError("Missing the required parameter `page_size` when calling `get_v4_nft_locker_lock_infos_list_using_get`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'page_num' in params:
+            query_params.append(('pageNum', params['page_num']))  # noqa: E501
+        if 'page_size' in params:
+            query_params.append(('pageSize', params['page_size']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['*/*'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = []  # noqa: E501
+
+        return self.api_client.call_api(
+            '/open/api/v1/locks/lpv4s', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseWrapperPageResponseV4NftLockerLockInfos',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def get_v4_nft_lockers_using_get(self, chain_id, page_num, page_size, pool_id, **kwargs):  # noqa: E501
+        """get v4 nft locker info  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_v4_nft_lockers_using_get(chain_id, page_num, page_size, pool_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str chain_id: chainId (required)
+        :param int page_num: pageNum (required)
+        :param int page_size: pageSize (required)
+        :param str pool_id: poolId (required)
+        :return: ResponseWrapperV4LpLockerLockInfoResp
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.get_v4_nft_lockers_using_get_with_http_info(chain_id, page_num, page_size, pool_id, **kwargs)  # noqa: E501
+        else:
+            (data) = self.get_v4_nft_lockers_using_get_with_http_info(chain_id, page_num, page_size, pool_id, **kwargs)  # noqa: E501
+            return data
+
+    def get_v4_nft_lockers_using_get_with_http_info(self, chain_id, page_num, page_size, pool_id, **kwargs):  # noqa: E501
+        """get v4 nft locker info  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_v4_nft_lockers_using_get_with_http_info(chain_id, page_num, page_size, pool_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str chain_id: chainId (required)
+        :param int page_num: pageNum (required)
+        :param int page_size: pageSize (required)
+        :param str pool_id: poolId (required)
+        :return: ResponseWrapperV4LpLockerLockInfoResp
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['chain_id', 'page_num', 'page_size', 'pool_id']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_v4_nft_lockers_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'chain_id' is set
+        if ('chain_id' not in params or
+                params['chain_id'] is None):
+            raise ValueError("Missing the required parameter `chain_id` when calling `get_v4_nft_lockers_using_get`")  # noqa: E501
+        # verify the required parameter 'page_num' is set
+        if ('page_num' not in params or
+                params['page_num'] is None):
+            raise ValueError("Missing the required parameter `page_num` when calling `get_v4_nft_lockers_using_get`")  # noqa: E501
+        # verify the required parameter 'page_size' is set
+        if ('page_size' not in params or
+                params['page_size'] is None):
+            raise ValueError("Missing the required parameter `page_size` when calling `get_v4_nft_lockers_using_get`")  # noqa: E501
+        # verify the required parameter 'pool_id' is set
+        if ('pool_id' not in params or
+                params['pool_id'] is None):
+            raise ValueError("Missing the required parameter `pool_id` when calling `get_v4_nft_lockers_using_get`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'chain_id' in params:
+            query_params.append(('chainId', params['chain_id']))  # noqa: E501
+        if 'page_num' in params:
+            query_params.append(('pageNum', params['page_num']))  # noqa: E501
+        if 'page_size' in params:
+            query_params.append(('pageSize', params['page_size']))  # noqa: E501
+        if 'pool_id' in params:
+            query_params.append(('poolId', params['pool_id']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['*/*'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = []  # noqa: E501
+
+        return self.api_client.call_api(
+            '/open/api/v1/locks/lpv4', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseWrapperV4LpLockerLockInfoResp',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
